@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML SkillUp K12 - WebApp Ôn tập & Thực hành HTML theo năng lực (Tin học 12)</title>
+  <link rel="icon" type="image/jpeg" href="logo.jpg?v=2">
+  <link rel="stylesheet" href="style.css?v=3.2">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Confetti canvas for celebrations -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="app-header">
+    <div class="header-container">
+      <div class="logo-area" onclick="navigateTo('home')">
+        <div class="logo-icon logo-img-wrap"><img src="logo.jpg?v=2" alt="HTML SkillUp K12 Logo" class="brand-logo-img"></div>
+        <div class="logo-text">
+          <h1>HTML SkillUp K12</h1>
+          <p>Ôn tập & Thực hành HTML theo năng lực (Tin học 12)</p>
+        </div>
+      </div>
+
+      <div class="header-stats" id="headerStats" style="display: none;">
+        <div class="stat-badge stat-xp" title="Điểm kinh nghiệm tích lũy">
+          <span>⭐</span>
+          <span id="userXpDisplay">0 XP</span>
+        </div>
+        <div class="stat-badge stat-streak" title="Chuỗi ngày ôn luyện">
+          <span>🔥</span>
+          <span id="userStreakDisplay">1 Ngày</span>
+        </div>
+      </div>
+
+      <div class="user-nav">
+        <div id="userInfoHeader" class="user-badge" style="display: none;">
+          <div class="user-avatar" id="userAvatar">A</div>
+          <div>
+            <div id="userNameDisplay" style="line-height: 1.2;">Học sinh</div>
+            <div id="userRoleDisplay" style="font-size: 0.7rem; color: var(--text-muted);">Lớp 12A1</div>
+          </div>
+        </div>
+
+        <button id="navGradPracticeBtn" class="btn btn-outline btn-sm" onclick="navigateTo('gradPractice')" style="display: none; border-color: #6366f1; color: #6366f1; font-weight: 600;">
+          🎯 Thi thử THPT
+        </button>
+
+        <button id="adminPortalBtn" class="btn btn-secondary btn-sm" onclick="navigateTo('teacher')" style="display: none;">
+          ⚙️ Quản trị GV
+        </button>
+
+        <button id="logoutBtn" class="btn btn-outline btn-sm" onclick="handleLogout()" style="display: none;">
+          Đăng xuất
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== MAIN CONTENT ==================== -->
+  <main class="main-content">
+
+    <!-- ==================== VIEW 1: AUTH / ĐĂNG NHẬP ==================== -->
+    <section id="authView" class="view-section active">
+      <div class="auth-wrapper">
+        <div class="auth-header">
+          <div class="auth-logo-wrap"><img src="logo.jpg?v=2" alt="HTML SkillUp K12" class="auth-logo-img"></div>
+          <h2>Đăng nhập Hệ thống</h2>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.25rem;">
+            <strong>HTML SkillUp K12</strong> - Ôn tập &amp; Thực hành HTML theo năng lực (Tin học 12)
+          </p>
+        </div>
+
+        <div class="auth-tabs">
+          <button class="auth-tab-btn active" id="tabStudentAuth" onclick="switchAuthTab('student')">👨‍🎓 Học sinh</button>
+          <button class="auth-tab-btn" id="tabTeacherAuth" onclick="switchAuthTab('teacher')">👨‍🏫 Giáo viên</button>
+        </div>
+
+        <form id="loginForm" onsubmit="handleLoginSubmit(event)">
+          <div class="form-group">
+            <label class="form-label" for="loginUsername">Tên đăng nhập / Mã học sinh:</label>
+            <input type="text" id="loginUsername" class="form-control" placeholder="Ví dụ: hs_12a1_01" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="loginPassword">Mật khẩu:</label>
+            <input type="password" id="loginPassword" class="form-control" placeholder="Nhập mật khẩu" required>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; margin-top: 0.5rem;">
+            Đăng nhập ngay 🚀
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW 2: STUDENT HOME / ROADMAP ==================== -->
+    <section id="studentHomeView" class="view-section">
+      <div class="dashboard-banner">
+        <div class="banner-content">
+          <h2 id="welcomeStudentMsg">Chào mừng trở lại! 👋</h2>
+          <p>
+            Chinh phục kiến thức HTML Tin học 12 qua các cấp độ ghi nhớ Flashcards, Kéo thả, Điền khuyết và Trắc nghiệm tự động!
+          </p>
+        </div>
+        <div class="overall-progress-card">
+          <div class="progress-text">Tiến độ khóa học: <strong id="overallProgressText">0%</strong></div>
+          <div class="progress-bar-bg">
+            <div id="overallProgressBar" class="progress-bar-fill" style="width: 0%;"></div>
+          </div>
+          <div style="font-size: 0.75rem; opacity: 0.85;">Đã hoàn thành <span id="completedLessonsCount">0</span>/6 bài học</div>
+        </div>
+      </div>
+
+      <div class="roadmap-title">
+        <h3>📚 Lộ trình các bài học HTML (SGK Tin học 12 KNTT)</h3>
+        <span style="font-size: 0.85rem; color: var(--text-muted);">Hoàn thành từng chặng để tích lũy XP</span>
+      </div>
+
+      <div class="lessons-grid" id="lessonsRoadmapGrid">
+        <!-- Rendered dynamically by JavaScript -->
+      </div>
+
+      <!-- Banner luyện thi thử tốt nghiệp THPT (Các Sở GD&ĐT) - Đặt ở cuối trang -->
+      <div class="graduation-banner-card" onclick="navigateTo('gradPractice')" style="margin-top: 2.5rem;">
+        <div class="grad-banner-badge">🔥 ĐẶC BIỆT: LUYỆN THI TỐT NGHIỆP THPT 2025</div>
+        <div class="grad-banner-body">
+          <div class="grad-banner-info">
+            <h3 class="grad-banner-title">🎯 Luyện Đề Thi Thử Tốt Nghiệp THPT (Chủ đề HTML - Các Sở GD&ĐT)</h3>
+            <p class="grad-banner-desc">
+              Tuyển tập ngân hàng câu hỏi chọn lọc từ đề thi thử của hơn 40 Sở GD&ĐT trên toàn quốc (Hà Nội, Nam Định, Nghệ An, Ninh Bình, Đà Nẵng, Bắc Giang, Bắc Ninh...). Gồm 28 câu trắc nghiệm 4 lựa chọn và 4 câu Đúng/Sai kèm giải thích chi tiết, cùng bài thi thử 45 phút chuẩn ma trận Bộ GD&ĐT!
+            </p>
+          </div>
+          <div class="grad-banner-actions">
+            <button class="btn btn-primary" onclick="event.stopPropagation(); navigateTo('gradPractice');" style="white-space: nowrap;">
+              📚 Vào phòng luyện thi →
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW 3: LESSON PLAY ROOM (5 CHẶNG) ==================== -->
+    <section id="lessonPlayView" class="view-section">
+      <div class="play-header">
+        <div class="play-title-group">
+          <button class="btn btn-secondary btn-sm" onclick="navigateTo('home')" style="margin-bottom: 0.4rem;">
+            ← Quay lại Lộ trình
+          </button>
+          <h2 id="currentLessonTitle">Bài 7: HTML và Cấu trúc trang web</h2>
+          <p id="currentLessonDesc">Tìm hiểu ngôn ngữ HTML và cấu trúc cơ bản.</p>
+        </div>
+        <div class="header-stats">
+          <div class="stat-badge stat-xp">
+            <span>Bài học:</span>
+            <strong id="lessonBadgeCode">Bài 7</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stage Navigation Tabs -->
+      <div class="stage-tabs">
+        <button class="stage-tab-btn active" id="tabStage1" onclick="switchStage(1)">
+          <span>📖</span> 1. Khám phá lý thuyết
+        </button>
+        <button class="stage-tab-btn" id="tabStage2" onclick="switchStage(2)">
+          <span>🃏</span> 2. Cấp độ 1: Thẻ lật Flashcards
+        </button>
+        <button class="stage-tab-btn" id="tabStage3" onclick="switchStage(3)">
+          <span>🧩</span> 3. Cấp độ 2: Kéo thả ghép nối
+        </button>
+        <button class="stage-tab-btn" id="tabStage4" onclick="switchStage(4)">
+          <span>✍️</span> 4. Cấp độ 3: Điền khuyết mã
+        </button>
+        <button class="stage-tab-btn" id="tabStage5" onclick="switchStage(5)">
+          <span>🎯</span> 5. Kiểm tra Trắc nghiệm
+        </button>
+      </div>
+
+      <!-- STAGE 1: THEORY -->
+      <div id="stage1Container" class="stage-container active">
+        <div class="theory-card" id="theoryCardContent">
+          <!-- Rendered dynamically -->
+        </div>
+        <div style="text-align: right; margin-top: 1rem;">
+          <button class="btn btn-primary btn-lg" onclick="switchStage(2)">
+            Đã nắm vững lý thuyết! Sang Cấp độ 1 (Thẻ lật) →
+          </button>
+        </div>
+      </div>
+
+      <!-- STAGE 2: FLASHCARDS -->
+      <div id="stage2Container" class="stage-container">
+        <div class="flashcard-arena">
+          <div class="flashcard-progress-bar">
+            <span>Thẻ <span id="fcCurrentIdx">1</span> / <span id="fcTotalCount">6</span></span>
+            <span style="color: var(--primary);">Nhấp vào thẻ để lật mặt sau 🔄</span>
+          </div>
+
+          <div class="card-scene" onclick="flipCurrentCard()">
+            <div class="card-flip" id="currentCardElement">
+              <div class="card-face card-front">
+                <div class="card-tag">THUẬT NGỮ / THẺ HTML</div>
+                <div class="card-text" id="fcFrontText">&lt;!DOCTYPE html&gt;</div>
+                <div class="card-hint" id="fcHintText">Gợi ý: Dòng đầu tiên</div>
+              </div>
+              <div class="card-face card-back">
+                <div class="card-text" id="fcBackText">Khai báo kiểu tài liệu và phiên bản HTML5.</div>
+                <div class="card-tag">BẤM LẠI ĐỂ LẬT TRƯỚC</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flashcard-actions">
+            <button class="btn btn-warning" onclick="handleFlashcardRating(false)">
+              🔄 Cần ôn lại
+            </button>
+            <button class="btn btn-success" onclick="handleFlashcardRating(true)">
+              ✅ Đã nhớ rõ (+10 XP)
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- STAGE 3: DRAG & DROP -->
+      <div id="stage3Container" class="stage-container">
+        <div class="drag-arena">
+          <div class="drag-instruction" id="dragInstructionText">
+            Kéo thả thẻ HTML ở cột trái vào đúng ô công dụng tương ứng ở cột phải (hoặc nhấp chọn lần lượt trên điện thoại):
+          </div>
+
+          <div class="drag-container">
+            <div>
+              <div class="drag-column-title">Thẻ / Khái niệm HTML</div>
+              <div class="draggable-items" id="dragItemsList">
+                <!-- Rendered dynamically -->
+              </div>
+            </div>
+            <div>
+              <div class="drag-column-title">Công dụng & Vai trò</div>
+              <div class="drop-targets" id="dropTargetsList">
+                <!-- Rendered dynamically -->
+              </div>
+            </div>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <button class="btn btn-secondary" onclick="initDragDropStage()">
+              🔄 Xếp lại từ đầu
+            </button>
+            <div id="dragMatchedStatus" style="font-weight: 700; color: var(--primary);">
+              Đã ghép đúng: <span id="dragMatchedCount">0</span>/<span id="dragTotalCount">5</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- STAGE 4: FILL IN THE BLANK -->
+      <div id="stage4Container" class="stage-container">
+        <div class="fill-arena">
+          <div class="drag-instruction">
+            ✍️ Quan sát đoạn mã và điền từ khóa hoặc thẻ HTML còn thiếu vào ô trống:
+          </div>
+
+          <div id="fillQuestionsList">
+            <!-- Rendered dynamically -->
+          </div>
+
+          <div style="text-align: center; margin-top: 1.5rem;">
+            <button class="btn btn-primary btn-lg" onclick="checkAllFillAnswers()">
+              Kiểm tra toàn bộ đáp án 🚀
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- STAGE 5: QUIZ -->
+      <div id="stage5Container" class="stage-container">
+        <div class="quiz-arena">
+          <div class="quiz-header">
+            <div class="quiz-counter">
+              Câu hỏi <span id="quizCurrentNum">1</span> / <span id="quizTotalNum">10</span>
+            </div>
+            <div class="quiz-timer">
+              <span>⏱️</span>
+              <span id="quizTimerDisplay">10:00</span>
+            </div>
+          </div>
+
+          <div class="quiz-question-text" id="quizQuestionText">
+            Nội dung câu hỏi trắc nghiệm sẽ hiển thị tại đây...
+          </div>
+
+          <div class="quiz-options" id="quizOptionsContainer">
+            <!-- Rendered dynamically -->
+          </div>
+
+          <div class="quiz-explanation-box" id="quizExplanationBox">
+            <!-- Explanation rendered dynamically -->
+          </div>
+
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <button id="quizPrevBtn" class="btn btn-secondary" onclick="navigateQuiz(-1)" style="visibility: hidden;">
+              ← Câu trước
+            </button>
+            <button id="quizNextBtn" class="btn btn-primary" onclick="navigateQuiz(1)">
+              Câu tiếp theo →
+            </button>
+            <button id="quizSubmitBtn" class="btn btn-success btn-lg" onclick="submitQuiz()" style="display: none;">
+              Nộp bài kiểm tra 🏁
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW: ÔN THI TỐT NGHIỆP THPT (CÁC SỞ GD&ĐT) ==================== -->
+    <section id="gradPracticeView" class="view-section">
+      <div class="grad-view-header">
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem;">
+          <button class="btn btn-outline btn-sm" onclick="navigateTo('home')">
+            ← Quay lại Lộ trình học
+          </button>
+          <span style="font-size: 0.85rem; color: var(--text-muted);">Hệ thống ôn thi Tin học 12 THPT</span>
+        </div>
+        <div class="grad-view-title-wrap">
+          <h2>🎯 ÔN THI TỐT NGHIỆP THPT - CHỦ ĐỀ HTML</h2>
+          <p>Tuyển chọn từ kho đề thi thử tốt nghiệp THPT chính thức của các Sở GD&ĐT trên toàn quốc (Hà Nội, Nam Định, Nghệ An, Ninh Bình, Đà Nẵng, Bắc Giang, Bắc Ninh, Bình Thuận, Vĩnh Long...).</p>
+        </div>
+      </div>
+
+      <!-- Thanh chọn 2 chế độ học -->
+      <div class="grad-tabs-bar">
+        <button class="grad-tab-btn active" id="tabGradBank" onclick="switchGradTab('bank')">
+          📚 Ngân hàng Luyện tập (Có giải thích chi tiết)
+        </button>
+        <button class="grad-tab-btn" id="tabGradExam" onclick="switchGradTab('exam')">
+          ⏱️ Đề thi thử Chuẩn Bộ GD&ĐT 2025 (45 phút)
+        </button>
+      </div>
+
+      <!-- CHẾ ĐỘ 1: NGÂN HÀNG LUYỆN TẬP TỰ DO -->
+      <div id="gradBankPanel" class="grad-panel">
+        <div class="grad-filter-bar">
+          <div class="grad-filter-item">
+            <label for="gradFilterExam">📑 Bộ đề thi thử (Đề 01 - Đề 08):</label>
+            <select id="gradFilterExam" onchange="renderGradBankQuestions()">
+              <option value="all">-- Tất cả ngân hàng (96 câu P1 + 16 câu P2 / 160 ý hỏi) --</option>
+              <option value="1">Đề thi thử số 01 (Đủ 28 câu • 45 phút • Tỉnh thành ngẫu nhiên)</option>
+              <option value="2">Đề thi thử số 02 (Đủ 28 câu • 45 phút • Tỉnh thành ngẫu nhiên)</option>
+              <option value="3">Đề thi thử số 03 (Đủ 28 câu • 45 phút • Tỉnh thành ngẫu nhiên)</option>
+              <option value="4">Đề thi thử số 04 (Đủ 28 câu • 45 phút • Tỉnh thành ngẫu nhiên)</option>
+              <option value="5">Đề thi thử số 05 (Đủ 28 câu • 45 phút • Tỉnh thành ngẫu nhiên)</option>
+              <option value="6">Đề thi thử số 06 (Đủ 28 câu • 45 phút • Tỉnh thành ngẫu nhiên)</option>
+              <option value="7">Đề thi thử số 07 (Đủ 28 câu • 45 phút • Tỉnh thành ngẫu nhiên)</option>
+              <option value="8">Đề thi thử số 08 (Đủ 28 câu • 45 phút • Tỉnh thành ngẫu nhiên)</option>
+            </select>
+          </div>
+          <div class="grad-filter-item">
+            <label for="gradFilterProvince">📍 Tỉnh thành / Sở GD&ĐT:</label>
+            <select id="gradFilterProvince" onchange="renderGradBankQuestions()">
+              <option value="">-- Tất cả các Sở GD&ĐT --</option>
+            </select>
+          </div>
+          <div class="grad-filter-item">
+            <label for="gradFilterLevel">🎯 Mức độ nhận thức:</label>
+            <select id="gradFilterLevel" onchange="renderGradBankQuestions()">
+              <option value="">-- Tất cả mức độ --</option>
+              <option value="NB">Nhận biết (NB)</option>
+              <option value="TH">Thông hiểu (TH)</option>
+              <option value="VD">Vận dụng (VD)</option>
+            </select>
+          </div>
+          <div class="grad-filter-item">
+            <label for="gradFilterType">📝 Dạng câu hỏi:</label>
+            <select id="gradFilterType" onchange="renderGradBankQuestions()">
+              <option value="all">Tất cả dạng câu hỏi</option>
+              <option value="p1">Phần I: Trắc nghiệm 4 lựa chọn (28 câu)</option>
+              <option value="p2">Phần II: Đúng / Sai (4 câu - 16 ý)</option>
+            </select>
+          </div>
+          <div class="grad-filter-item" style="flex: 0 0 auto; align-self: flex-end;">
+            <span class="grad-stats-pill" id="gradBankCountBadge">Đang tải...</span>
+          </div>
+        </div>
+
+        <div id="gradQuestionsContainer" class="grad-questions-list">
+          <!-- Rendered dynamically by JavaScript -->
+        </div>
+      </div>
+
+      <!-- CHẾ ĐỘ 2: ĐỀ THI THỬ 45 PHÚT CHUẨN MA TRẬN 2025 (4 ĐỀ) -->
+      <div id="gradExamPanel" class="grad-panel" style="display: none;">
+        <div class="grad-exam-top-intro" style="text-align: center; max-width: 860px; margin: 0 auto 1.75rem auto;">
+          <div class="grad-exam-badge">CHUẨN MA TRẬN KHẢO THÍ BỘ GD&ĐT 2025</div>
+          <h3 style="font-size: 1.5rem; font-weight: 800; color: #1e293b; margin: 0.5rem 0;">HỆ THỐNG 08 ĐỀ THI THỬ TỐT NGHIỆP THPT MÔN TIN HỌC</h3>
+          <p style="color: #475569; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.25rem;">
+            Ngân hàng đề thi thử chính thức tuyển chọn từ hơn 40 Sở GD&ĐT trên cả nước. Cấu trúc mỗi đề gồm <strong>28 câu hỏi</strong> (24 câu Phần I + 4 câu Phần II với 16 ý), thời gian <strong>45 phút</strong>, thang điểm <strong>10.0</strong> chuẩn ma trận 4:3:3 (NB: 40% - TH: 30% - VD: 30%). Câu hỏi được chọn ngẫu nhiên từ ngân hàng và <strong>ghi chú rõ Sở GD&ĐT xuất xứ ở từng câu</strong>.
+          </p>
+          <div>
+            <button type="button" class="btn btn-primary" onclick="startRandomGradExam()" style="padding: 0.75rem 1.6rem; font-size: 1rem; border-radius: 9999px; box-shadow: 0 4px 14px rgba(99, 102, 241, 0.4);">
+              🎲 Tạo Đề Thi Ngẫu Nhiên Mới (28 câu • 45 phút)
+            </button>
+          </div>
+        </div>
+
+        <!-- Lưới 4 đề thi thử -->
+        <div class="mock-exams-grid" id="mockExamsGrid">
+          <!-- Rendered dynamically by renderMockExamsGrid() in JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW: COMPREHENSIVE EXAM (BÀI 7 - 8 - 9) ==================== -->
+    <section id="examView" class="view-section">
+      <div class="exam-header-banner">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+          <div>
+            <button class="btn btn-secondary btn-sm" onclick="navigateTo('home')" style="margin-bottom: 0.4rem;">
+              ← Quay lại Lộ trình
+            </button>
+            <h2 id="examViewTitle" style="font-size: 1.35rem; font-weight: 800; color: #1e293b;">
+              🏆 Bài kiểm tra tổng hợp kiến thức (Bài 7 - 8 - 9)
+            </h2>
+            <p id="examViewDesc" style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem;">
+              Cấu trúc chuẩn Bộ GD&ĐT 2025: <strong>24 câu trắc nghiệm</strong> (6.0 điểm) + <strong>4 câu Đúng/Sai</strong> (4.0 điểm) • Thang điểm 10
+            </p>
+            <div class="exam-matrix-stat-bar" style="margin-bottom: 0;">
+              <span class="exam-stat-pill"><span class="badge-level badge-level-nb">NB: 40%</span> 16 câu/ý (4.0 điểm)</span>
+              <span class="exam-stat-pill"><span class="badge-level badge-level-th">TH: 30%</span> 12 câu/ý (3.0 điểm)</span>
+              <span class="exam-stat-pill"><span class="badge-level badge-level-vd">VD: 30%</span> 12 câu/ý (3.0 điểm)</span>
+              <span style="color: #64748b; font-size: 0.78rem;">(Tỉ lệ ma trận 4 : 3 : 3)</span>
+            </div>
+          </div>
+          <div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+            <div class="exam-timer-box">
+              <span style="font-size: 1.2rem;">⏱️</span>
+              <div>
+                <div style="font-size: 0.7rem; text-transform: uppercase; font-weight: 700; color: #b91c1c;">Thời gian còn lại</div>
+                <div id="examTimerDisplay" style="font-size: 1.35rem; font-weight: 800; font-family: var(--font-mono); color: #dc2626;">45:00</div>
+              </div>
+            </div>
+            <button class="btn btn-success btn-lg" onclick="submitComprehensiveExam()">
+              🏁 Nộp bài thi
+            </button>
+          </div>
+        </div>
+
+        <!-- Quick Switch Tabs: Phần I vs Phần II -->
+        <div class="exam-part-tabs" style="margin-top: 1.25rem;">
+          <button class="exam-part-tab active" id="tabExamPart1" onclick="switchExamPart(1)">
+            📝 Phần I: Trắc nghiệm 4 lựa chọn (24 câu - 6.0 điểm)
+            <span class="exam-answered-badge" id="examPart1Progress">0/24</span>
+          </button>
+          <button class="exam-part-tab" id="tabExamPart2" onclick="switchExamPart(2)">
+            ⚖️ Phần II: Trắc nghiệm Đúng / Sai (4 câu 16 ý - 4.0 điểm)
+            <span class="exam-answered-badge" id="examPart2Progress">0/16</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Quick Question Matrix Bar -->
+      <div class="exam-matrix-card">
+        <div style="font-size: 0.8rem; font-weight: 700; color: var(--text-muted); margin-bottom: 0.6rem; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem;">
+          <span>MA TRẬN CÂU HỎI (Bấm số để cuộn nhanh đến câu):</span>
+          <span><span style="color:#10b981; font-weight:700;">● Đã làm</span> | <span style="color:#94a3b8; font-weight:700;">○ Chưa làm</span></span>
+        </div>
+        <div class="exam-matrix-grid" id="examMatrixGrid">
+          <!-- Rendered dynamically -->
+        </div>
+      </div>
+
+      <!-- Container: Phần I (24 câu) -->
+      <div id="examPart1Container" class="exam-part-container active">
+        <div id="examPart1QuestionsList">
+          <!-- Rendered dynamically -->
+        </div>
+        <div style="text-align: center; margin-top: 1.5rem;">
+          <button class="btn btn-primary btn-lg" onclick="switchExamPart(2)">
+            Chuyển sang Phần II: Trắc nghiệm Đúng / Sai (4 câu) →
+          </button>
+        </div>
+      </div>
+
+      <!-- Container: Phần II (4 câu Đúng/Sai) -->
+      <div id="examPart2Container" class="exam-part-container" style="display: none;">
+        <div id="examPart2QuestionsList">
+          <!-- Rendered dynamically -->
+        </div>
+        <div style="text-align: center; margin-top: 2rem; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+          <button class="btn btn-secondary btn-lg" onclick="switchExamPart(1)">
+            ← Quay lại Phần I
+          </button>
+          <button class="btn btn-success btn-lg" onclick="submitComprehensiveExam()">
+            🏁 Hoàn thành & Nộp bài kiểm tra tổng hợp
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW 4: RESULT CERTIFICATE ==================== -->
+    <section id="resultView" class="view-section">
+      <div class="result-card">
+        <div class="result-trophy">🏆</div>
+        <h2 class="result-title" id="resultTitleText">Chúc mừng em đã hoàn thành!</h2>
+        <p id="resultSubtitleText" style="color: var(--text-muted);">
+          Kết quả học tập đã được ghi nhận vào hệ thống
+        </p>
+
+        <div class="result-score-circle">
+          <span class="result-score-val" id="resultScoreValue">10</span>
+          <span class="result-score-max" id="resultScoreSub">/ 10 Điểm</span>
+        </div>
+
+        <div class="result-details-grid">
+          <div>
+            <div class="detail-item-title">Số câu đúng</div>
+            <div class="detail-item-val" id="resultRatioValue">10/10</div>
+          </div>
+          <div>
+            <div class="detail-item-title">Tỷ lệ chính xác</div>
+            <div class="detail-item-val" id="resultPercentValue">100%</div>
+          </div>
+          <div>
+            <div class="detail-item-title">Thời gian làm</div>
+            <div class="detail-item-val" id="resultDurationValue">2 phút 15 giây</div>
+          </div>
+        </div>
+
+        <div id="syncStatusBadge" class="sync-status-indicator sync-pending">
+          <span>🔄</span>
+          <span id="syncStatusText">Đang đồng bộ kết quả lên Google Sheet của Giáo viên...</span>
+        </div>
+
+        <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 1rem;">
+          <button class="btn btn-secondary" onclick="retryCurrentActivity()">
+            🔄 Làm lại bài này
+          </button>
+          <button class="btn btn-primary" onclick="navigateTo('home')">
+            🏠 Trở về danh sách bài học
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW 5: TEACHER ADMIN PORTAL ==================== -->
+    <section id="teacherView" class="view-section">
+      <div class="admin-header">
+        <div>
+          <h2>👨‍🏫 Bảng Điều Khiển Quản Trị Giáo Viên</h2>
+          <p style="font-size: 0.9rem; color: var(--text-muted);">
+            Quản lý danh sách học sinh, cấp tài khoản, theo dõi điểm số và đồng bộ Google Sheets
+          </p>
+        </div>
+        <button class="btn btn-secondary" onclick="navigateTo('home')">
+          ← Chế độ Học sinh
+        </button>
+      </div>
+
+      <div class="admin-nav-tabs">
+        <button class="admin-nav-tab active" id="tabAdminStudents" onclick="switchAdminTab('students')">
+          👥 Quản lý & Cấp tài khoản Học sinh
+        </button>
+        <button class="admin-nav-tab" id="tabAdminResults" onclick="switchAdminTab('results')">
+          📊 Bảng điểm & Kết quả làm bài
+        </button>
+        <button class="admin-nav-tab" id="tabAdminSheet" onclick="switchAdminTab('sheet')">
+          📑 Cấu hình Google Sheet (Webhook)
+        </button>
+      </div>
+
+      <!-- ADMIN TAB 1: QUẢN LÝ HỌC SINH -->
+      <div id="adminStudentsPanel" class="admin-panel active">
+        <div class="admin-card">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.25rem; flex-wrap: wrap; gap: 0.75rem;">
+            <div>
+              <h3 style="font-size: 1.15rem;">Danh sách tài khoản học sinh (<span id="totalStudentsCount">0</span> em)</h3>
+              <p style="font-size: 0.8rem; color: var(--text-muted);">Tự động sinh username & mật khẩu để phát cho học sinh đăng nhập</p>
+            </div>
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+              <button class="btn btn-primary btn-sm" onclick="openImportModal()">
+                📥 Import danh sách học sinh mới
+              </button>
+              <button class="btn btn-secondary btn-sm" onclick="exportStudentsToCSV()">
+                💾 Xuất file CSV / Excel
+              </button>
+              <button class="btn btn-secondary btn-sm" onclick="printStudentAccounts()">
+                🖨️ In phiếu cấp tài khoản
+              </button>
+            </div>
+          </div>
+
+          <div class="filter-bar" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem;">
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+              <input type="text" id="searchStudentInput" class="form-control" style="max-width: 280px;" placeholder="Tìm theo tên hoặc mã HS..." oninput="renderStudentsTable()">
+              <select id="filterClassSelect" class="form-control" style="max-width: 180px;" onchange="renderStudentsTable()">
+                <option value="">-- Tất cả các lớp --</option>
+              </select>
+            </div>
+            <button class="btn btn-danger btn-sm" onclick="deleteClassStudents()">
+              🗑️ Xóa danh sách học sinh theo lớp
+            </button>
+          </div>
+
+          <div class="data-table-wrapper">
+            <table class="data-table" id="studentsTable">
+              <thead>
+                <tr>
+                  <th>STT</th>
+                  <th>Mã đăng nhập</th>
+                  <th>Mật khẩu</th>
+                  <th>Họ và tên</th>
+                  <th>Lớp</th>
+                  <th>Điểm XP</th>
+                  <th>Huy hiệu đạt được</th>
+                  <th>Thao tác</th>
+                </tr>
+              </thead>
+              <tbody id="studentsTableBody">
+                <!-- Rendered dynamically -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- ADMIN TAB 2: BẢNG ĐIỂM & KẾT QUẢ -->
+      <div id="adminResultsPanel" class="admin-panel" style="display: none;">
+        <div class="admin-card">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.25rem; flex-wrap: wrap; gap: 0.75rem;">
+            <div>
+              <h3 style="font-size: 1.15rem;">Nhật ký & Bảng điểm làm bài thời gian thực</h3>
+              <p style="font-size: 0.8rem; color: var(--text-muted);">Lưu trữ kết quả tất cả các bài tập ôn luyện và kiểm tra trắc nghiệm</p>
+            </div>
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+              <button class="btn btn-success btn-sm" onclick="openGoogleSheetFromApp()" style="background: #10b981; color: white; border: none; font-weight: 600;">
+                📊 Mở Google Sheet Xem Kết Quả ↗
+              </button>
+              <button class="btn btn-secondary btn-sm" onclick="exportResultsToCSV()">
+                💾 Xuất bảng điểm (CSV)
+              </button>
+              <button class="btn btn-danger btn-sm" onclick="clearAllResults()">
+                🗑️ Xóa nhật ký điểm
+              </button>
+            </div>
+          </div>
+
+          <!-- Thanh chọn nhanh theo lớp (Quick Filter Pills) -->
+          <div style="margin-bottom: 0.85rem;">
+            <div style="font-size: 0.8rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.4rem;">
+              🏫 Lọc nhanh theo lớp:
+            </div>
+            <div id="classQuickPills" style="display: flex; gap: 0.5rem; flex-wrap: wrap; align-items: center;">
+              <!-- Rendered dynamically -->
+            </div>
+          </div>
+
+          <div class="filter-bar" style="display: flex; gap: 0.5rem; flex-wrap: wrap; align-items: center; margin-bottom: 1rem;">
+            <select id="filterResultClass" class="form-control" style="max-width: 175px;" onchange="renderResultsTable()">
+              <option value="">-- Tất cả các lớp --</option>
+            </select>
+            <select id="filterResultLesson" class="form-control" style="max-width: 240px;" onchange="renderResultsTable()">
+              <option value="">-- Tất cả bài học & Đề thi --</option>
+              <option value="Bài 7">Bài 7: HTML và Cấu trúc</option>
+              <option value="Bài 8">Bài 8: Định dạng văn bản</option>
+              <option value="Bài 9">Bài 9: Danh sách & Bảng</option>
+              <option value="Bài 7 - 8 - 9">🏆 KT tổng hợp (Bài 7 - 8 - 9)</option>
+              <option value="Bài 10">Bài 10: Tạo liên kết</option>
+              <option value="Bài 11">Bài 11: Đa phương tiện & Iframe</option>
+              <option value="Bài 12">Bài 12: Biểu mẫu (Form)</option>
+              <option value="Bài 10 - 11 - 12">🏆 KT tổng hợp (Bài 10 - 11 - 12)</option>
+              <option value="Thi thử">🎯 Đề thi thử TN THPT (Tất cả)</option>
+              <option value="Số 01">🎯 Đề thi thử Số 01</option>
+              <option value="Số 02">🎯 Đề thi thử Số 02</option>
+              <option value="Số 03">🎯 Đề thi thử Số 03</option>
+              <option value="Số 04">🎯 Đề thi thử Số 04</option>
+            </select>
+            <select id="filterResultActivity" class="form-control" style="max-width: 220px;" onchange="renderResultsTable()">
+              <option value="">-- Tất cả loại bài tập --</option>
+              <option value="Flashcards">Cấp độ 1: Flashcards</option>
+              <option value="Kéo thả">Cấp độ 2: Kéo thả</option>
+              <option value="Điền khuyết">Cấp độ 3: Điền khuyết</option>
+              <option value="Trắc nghiệm">Kiểm tra Trắc nghiệm bài học</option>
+              <option value="Định kỳ">🏆 Đề KT định kỳ (24 TN + 4 Đ/S)</option>
+            </select>
+            <input type="text" id="searchResultInput" class="form-control" style="max-width: 210px;" placeholder="Tìm tên hoặc mã HS..." oninput="renderResultsTable()">
+            <button class="btn btn-outline btn-sm" onclick="resetResultFilters()" title="Đặt lại toàn bộ bộ lọc" style="white-space: nowrap;">
+              🔄 Đặt lại lọc
+            </button>
+          </div>
+
+          <!-- Thẻ thống kê điểm theo lớp đang chọn -->
+          <div id="classStatsSummary" style="margin-bottom: 1rem;"></div>
+
+          <div class="data-table-wrapper">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Thời gian</th>
+                  <th>Mã HS</th>
+                  <th>Họ và tên</th>
+                  <th>Lớp</th>
+                  <th>Bài học</th>
+                  <th>Hoạt động</th>
+                  <th>Điểm số</th>
+                  <th>Kết quả</th>
+                  <th>Tỷ lệ</th>
+                  <th>Thời gian</th>
+                  <th>Đánh giá</th>
+                </tr>
+              </thead>
+              <tbody id="resultsTableBody">
+                <!-- Rendered dynamically -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- ADMIN TAB 3: CẤU HÌNH GOOGLE SHEET -->
+      <div id="adminSheetPanel" class="admin-panel" style="display: none;">
+        <div class="admin-card">
+          <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Cấu hình Webhook Google Sheet</h3>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.25rem;">
+            Kết nối Webapp trực tiếp tới trang tính Google Sheet của Giáo viên qua Google Apps Script hoàn toàn miễn phí.
+          </p>
+
+          <div class="form-group">
+            <label class="form-label" for="googleSheetUrlInput">URL Ứng dụng web Google Apps Script (Webhook URL):</label>
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+              <input type="url" id="googleSheetUrlInput" class="form-control" placeholder="https://script.google.com/macros/s/AKfycb.../exec" style="flex: 1; min-width: 250px;">
+              <button class="btn btn-primary" onclick="saveGoogleSheetUrl()">
+                💾 Lưu cấu hình
+              </button>
+              <button class="btn btn-success" onclick="testGoogleSheetConnection()">
+                🧪 Gửi bài thử (Test)
+              </button>
+              <button class="btn btn-warning" id="btnOpenSheet" onclick="openGoogleSheetFromApp()" style="background: #10b981; color: white; border: none; font-weight: bold; cursor: pointer;">
+                📊 Mở Google Sheet Xem Kết Quả Luôn ↗
+              </button>
+            </div>
+            <div id="sheetStatusText" style="margin-top: 0.5rem; font-size: 0.85rem; font-weight: 600;"></div>
+          </div>
+
+          <div style="margin-top: 2rem; background: #f8fafc; border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 1.5rem;">
+            <h4 style="font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem;">📋 Hướng dẫn thiết lập Google Sheet chỉ với 3 bước:</h4>
+            <ol style="padding-left: 1.25rem; font-size: 0.88rem; color: #334155; line-height: 1.8;">
+              <li>Mở một Google Sheet mới trên Google Drive của bạn.</li>
+              <li>Vào menu <strong>Tiện ích mở rộng (Extensions)</strong> &gt; <strong>Apps Script</strong>.</li>
+              <li>Sao chép toàn bộ mã nguồn bên dưới, dán vào Apps Script rồi bấm <strong>Triển khai (Deploy)</strong> &gt; <strong>Triển khai mới</strong> &gt; Chọn kiểu <strong>Ứng dụng web (Web app)</strong> &gt; Thiết lập <em>Ai có quyền truy cập: <strong>Bất kỳ ai (Anyone)</strong></em> &gt; Dán link vào ô bên trên!</li>
+            </ol>
+
+            <div style="margin-top: 1rem;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                <strong style="font-size: 0.85rem;">Mã nguồn Google Apps Script (Bấm nút để copy nhanh):</strong>
+                <button class="btn btn-outline btn-sm" onclick="copyGasCode()">📋 Copy toàn bộ mã</button>
+              </div>
+              <pre id="gasCodeDisplay" style="background: #0f172a; color: #f8fafc; padding: 1rem; border-radius: var(--radius-sm); font-family: var(--font-mono); font-size: 0.78rem; max-height: 250px; overflow-y: auto;"></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== MODAL: IMPORT HỌC SINH HÀNG LOẠT ==================== -->
+  <div class="modal-overlay" id="importModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>📥 Import Danh Sách Học Sinh Từ vnEdu / Excel</h3>
+        <button class="modal-close-btn" onclick="closeImportModal()">×</button>
+      </div>
+
+      <div style="background: #eff6ff; border-left: 4px solid var(--primary); padding: 0.75rem 1rem; border-radius: 0 var(--radius-sm) var(--radius-sm) 0; margin-bottom: 1.25rem; font-size: 0.85rem; color: #1e3a8a; line-height: 1.5;">
+        <strong>💡 Hỗ trợ chuẩn file vnEdu:</strong> Thầy/Cô chỉ cần <strong>dán toàn bộ nội dung file sổ điểm xuất từ vnEdu</strong> (hoặc bấm nút chọn file bên dưới). Hệ thống sẽ <strong>tự động ghép Họ đệm + Tên, tự nhận diện Lớp và Mã học sinh</strong> mà <em>không cần phải gõ thêm tên lớp vào sau tên</em>!
+      </div>
+
+      <div style="display: flex; gap: 0.75rem; align-items: center; margin-bottom: 1rem; flex-wrap: wrap;">
+        <input type="file" id="vneduFileInput" accept=".csv,.txt" style="display: none;" onchange="handleVneduFileUpload(event)">
+        <button type="button" class="btn btn-secondary btn-sm" onclick="document.getElementById('vneduFileInput').click()">
+          📁 Chọn file sổ điểm vnEdu (.csv / .txt) từ máy tính
+        </button>
+        <span id="fileUploadNotice" style="font-size: 0.8rem; color: var(--text-muted);"></span>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+        <div class="form-group">
+          <label class="form-label" for="importClassDefault">Lớp (Tự động nhận diện từ vnEdu):</label>
+          <input type="text" id="importClassDefault" class="form-control" value="12A1" placeholder="Ví dụ: 12A1">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="importUsernameMode">Quy tắc tạo Tên đăng nhập:</label>
+          <select id="importUsernameMode" class="form-control">
+            <option value="vnedu_id">Dùng Mã học sinh vnEdu (Khuyên dùng)</option>
+            <option value="name_slug">Dùng Tên + Lớp (hs_12a1_01)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="importDefaultPassword">Mật khẩu ban đầu cấp cho học sinh:</label>
+        <input type="text" id="importDefaultPassword" class="form-control" value="123" placeholder="Mật khẩu mặc định">
+      </div>
+
+      <div class="form-group">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.35rem;">
+          <label class="form-label" for="importRawText" style="margin-bottom: 0;">Dán nội dung sổ điểm vnEdu hoặc danh sách tại đây:</label>
+          <span id="importPreviewBadge" style="font-size: 0.75rem; font-weight: 700; color: #059669;"></span>
+        </div>
+        <textarea id="importRawText" class="form-control" rows="8" placeholder="Dán nội dung sổ điểm vnEdu tại đây... (Ví dụ copy toàn bộ nội dung file sổ điểm vnEdu hoặc danh sách họ tên)" oninput="handleImportTextChange()"></textarea>
+      </div>
+
+      <div style="display: flex; justify-content: flex-end; gap: 0.75rem; margin-top: 1.25rem;">
+        <button class="btn btn-secondary" onclick="closeImportModal()">Hủy bỏ</button>
+        <button class="btn btn-primary" onclick="processStudentImport()">
+          ⚡ Tự động tạo tài khoản & Lưu
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="app-footer">
+    <p>
+      <strong>HTML12 - NĂNG LỰC</strong> &copy; 2026 - 2027. Sản phẩm Sáng kiến kinh nghiệm: <em>"Ứng dụng WebApp hỗ trợ học sinh lớp 12 ôn tập và thực hành HTML theo năng lực"</em>.
+    </p>
+    <p style="font-size: 0.75rem; margin-top: 0.25rem;">
+      Tích hợp Gamification ôn tập đa cấp độ (Flashcards - Kéo thả - Điền khuyết - Trắc nghiệm) và đồng bộ Google Sheets tự động.
+    </p>
+  </footer>
+
+  <!-- SCRIPT DATA & APP LOGIC -->
+  <script src="data.js?v=3.2"></script>
+  <script src="app.js?v=3.2"></script>
+</body>
+</html>
