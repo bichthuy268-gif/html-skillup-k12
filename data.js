@@ -10612,11 +10612,4436 @@ const COMPREHENSIVE_EXAMS = {
 
 
 const INITIAL_STUDENTS = [
-  { username: "hs_12a1_01", password: "123", fullname: "Nguyễn Văn An", className: "12A1", xp: 120, badges: ["Nhập môn HTML"] },
-  { username: "hs_12a1_02", password: "123", fullname: "Trần Thị Bích", className: "12A1", xp: 250, badges: ["Nhập môn HTML", "Siêu liên kết"] },
-  { username: "hs_12a1_03", password: "123", fullname: "Lê Hoàng Long", className: "12A1", xp: 80, badges: ["Nhập môn HTML"] },
-  { username: "hs_12a2_01", password: "123", fullname: "Phạm Thảo My", className: "12A2", xp: 190, badges: ["Nhập môn HTML", "Bậc thầy Bảng"] },
-  { username: "hs_12a2_02", password: "123", fullname: "Đặng Minh Quân", className: "12A2", xp: 310, badges: ["Nhập môn HTML", "Chuyên gia Form", "Chiến binh HTML"] }
+  {
+    "username": "hs_12a1_01",
+    "password": "123",
+    "fullname": "Lê Hoàng Kim An",
+    "className": "12A1",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a1_02",
+    "password": "123",
+    "fullname": "Nguyễn Ngọc Hoài Ánh",
+    "className": "12A1",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a1_03",
+    "password": "123",
+    "fullname": "Trần Khánh Băng",
+    "className": "12A1",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a1_04",
+    "password": "123",
+    "fullname": "Nguyễn Bảo Châu",
+    "className": "12A1",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a1_05",
+    "password": "123",
+    "fullname": "Lê Đặng Thanh Duy",
+    "className": "12A1",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a1_06",
+    "password": "123",
+    "fullname": "Đinh Tiến Dưỡng",
+    "className": "12A1",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a1_07",
+    "password": "123",
+    "fullname": "Nguyễn Tấn Đạt",
+    "className": "12A1",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a1_08",
+    "password": "123",
+    "fullname": "Trần Gia Hân",
+    "className": "12A1",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a1_09",
+    "password": "123",
+    "fullname": "Nguyễn Minh Hoàng",
+    "className": "12A1",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a1_10",
+    "password": "123",
+    "fullname": "Bùi Phúc Hưng",
+    "className": "12A1",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a1_11",
+    "password": "123",
+    "fullname": "Võ Minh Khang",
+    "className": "12A1",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a1_12",
+    "password": "123",
+    "fullname": "Đỗ Nguyễn Gia Khánh",
+    "className": "12A1",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a1_13",
+    "password": "123",
+    "fullname": "Cao Gia Kiệt",
+    "className": "12A1",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a1_14",
+    "password": "123",
+    "fullname": "Đào Duy Anh Kiệt",
+    "className": "12A1",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a1_15",
+    "password": "123",
+    "fullname": "Lìu Huỳnh Bảo Kim",
+    "className": "12A1",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a1_16",
+    "password": "123",
+    "fullname": "Châu Bảo Linh",
+    "className": "12A1",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a1_17",
+    "password": "123",
+    "fullname": "Trương Quỳnh My",
+    "className": "12A1",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a1_18",
+    "password": "123",
+    "fullname": "Nguyễn Thị Kim Nguyên",
+    "className": "12A1",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a1_19",
+    "password": "123",
+    "fullname": "Nguyễn Tiến Thiện Nhân",
+    "className": "12A1",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a1_20",
+    "password": "123",
+    "fullname": "Phan Văn Nhật",
+    "className": "12A1",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a1_21",
+    "password": "123",
+    "fullname": "Lê Uyên Nhi",
+    "className": "12A1",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a1_22",
+    "password": "123",
+    "fullname": "Đỗ Gia Phong",
+    "className": "12A1",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a1_23",
+    "password": "123",
+    "fullname": "Đỗ Gia Phú",
+    "className": "12A1",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a1_24",
+    "password": "123",
+    "fullname": "Vòong Chi Phún",
+    "className": "12A1",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a1_25",
+    "password": "123",
+    "fullname": "Huỳnh Nhã Phương",
+    "className": "12A1",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a1_26",
+    "password": "123",
+    "fullname": "Phạm Văn Quang",
+    "className": "12A1",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a1_27",
+    "password": "123",
+    "fullname": "Bùi Thành Tài",
+    "className": "12A1",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a1_28",
+    "password": "123",
+    "fullname": "Lai Quốc Thái",
+    "className": "12A1",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a1_29",
+    "password": "123",
+    "fullname": "Lê Đức Hải Thanh",
+    "className": "12A1",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a1_30",
+    "password": "123",
+    "fullname": "Hồ Văn Trí Thiện",
+    "className": "12A1",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a1_31",
+    "password": "123",
+    "fullname": "Võ Minh Thông",
+    "className": "12A1",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a1_32",
+    "password": "123",
+    "fullname": "Nguyễn Thị Thu Thúy",
+    "className": "12A1",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a1_33",
+    "password": "123",
+    "fullname": "Trần Ngọc Anh Thư",
+    "className": "12A1",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a1_34",
+    "password": "123",
+    "fullname": "Trần Nguyễn Anh Thư",
+    "className": "12A1",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a1_35",
+    "password": "123",
+    "fullname": "Trương Nguyễn Huyền Trang",
+    "className": "12A1",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a1_36",
+    "password": "123",
+    "fullname": "Nguyễn Thị Mỹ Trâm",
+    "className": "12A1",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a1_37",
+    "password": "123",
+    "fullname": "Nguyễn Bảo Trân",
+    "className": "12A1",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a1_38",
+    "password": "123",
+    "fullname": "Nguyễn Huỳnh Bảo Trân",
+    "className": "12A1",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a1_39",
+    "password": "123",
+    "fullname": "Lê Gia Uyển",
+    "className": "12A1",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a1_40",
+    "password": "123",
+    "fullname": "Huỳnh Lê Thảo Vân",
+    "className": "12A1",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a1_41",
+    "password": "123",
+    "fullname": "Hồ Sắm Vậy",
+    "className": "12A1",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a1_42",
+    "password": "123",
+    "fullname": "Mai Thanh Vũ",
+    "className": "12A1",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a1_43",
+    "password": "123",
+    "fullname": "Huỳnh Việt Vương",
+    "className": "12A1",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a1_44",
+    "password": "123",
+    "fullname": "Lý Thảo Vy",
+    "className": "12A1",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a1_45",
+    "password": "123",
+    "fullname": "Nguyễn Thị Thảo Vy",
+    "className": "12A1",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a2_01",
+    "password": "123",
+    "fullname": "Võ Thạch Tuấn Anh",
+    "className": "12A2",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a2_02",
+    "password": "123",
+    "fullname": "Nguyễn Hồng Ân",
+    "className": "12A2",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a2_03",
+    "password": "123",
+    "fullname": "Thái Nguyên Bảo",
+    "className": "12A2",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a2_04",
+    "password": "123",
+    "fullname": "Nguyễn Khánh Băng",
+    "className": "12A2",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a2_05",
+    "password": "123",
+    "fullname": "Nguyễn Tiểu Băng",
+    "className": "12A2",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a2_06",
+    "password": "123",
+    "fullname": "Châu Gia Bằng",
+    "className": "12A2",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a2_07",
+    "password": "123",
+    "fullname": "Nguyễn Hồ Quỳnh Chi",
+    "className": "12A2",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a2_08",
+    "password": "123",
+    "fullname": "Nguyễn Hoàng Anh Duy",
+    "className": "12A2",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a2_09",
+    "password": "123",
+    "fullname": "Nguyễn Ngọc Trường Giang",
+    "className": "12A2",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a2_10",
+    "password": "123",
+    "fullname": "Nguyễn Ngọc Hậu",
+    "className": "12A2",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a2_11",
+    "password": "123",
+    "fullname": "Nguyễn Hoàng Minh Hiếu",
+    "className": "12A2",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a2_12",
+    "password": "123",
+    "fullname": "Nguyễn Phan Gia Huy",
+    "className": "12A2",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a2_13",
+    "password": "123",
+    "fullname": "Nguyễn Quốc Huy",
+    "className": "12A2",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a2_14",
+    "password": "123",
+    "fullname": "Trần Võ Gia Huy",
+    "className": "12A2",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a2_15",
+    "password": "123",
+    "fullname": "Sỳ Giao In",
+    "className": "12A2",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a2_16",
+    "password": "123",
+    "fullname": "Lê Nguyên Khang",
+    "className": "12A2",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a2_17",
+    "password": "123",
+    "fullname": "Nguyễn Bảo Khang",
+    "className": "12A2",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a2_18",
+    "password": "123",
+    "fullname": "Nguyễn Nhật Quốc Khánh",
+    "className": "12A2",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a2_19",
+    "password": "123",
+    "fullname": "Lê Hữu Kiệt",
+    "className": "12A2",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a2_20",
+    "password": "123",
+    "fullname": "Nguyễn Anh Kiệt",
+    "className": "12A2",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a2_21",
+    "password": "123",
+    "fullname": "Lê Bá Nam",
+    "className": "12A2",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a2_22",
+    "password": "123",
+    "fullname": "Lê Ngọc Kim Ngân",
+    "className": "12A2",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a2_23",
+    "password": "123",
+    "fullname": "Nguyễn Bảo Ngọc",
+    "className": "12A2",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a2_24",
+    "password": "123",
+    "fullname": "Quách Thị Thái Nguyên",
+    "className": "12A2",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a2_25",
+    "password": "123",
+    "fullname": "Trần Thị Uyển Nhi",
+    "className": "12A2",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a2_26",
+    "password": "123",
+    "fullname": "Trương Gia Pháp",
+    "className": "12A2",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a2_27",
+    "password": "123",
+    "fullname": "La Võ Quỳnh Phương",
+    "className": "12A2",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a2_28",
+    "password": "123",
+    "fullname": "Nguyễn Bích Phương",
+    "className": "12A2",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a2_29",
+    "password": "123",
+    "fullname": "Ngô Chan Pin",
+    "className": "12A2",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a2_30",
+    "password": "123",
+    "fullname": "Vòng Cón Siêu",
+    "className": "12A2",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a2_31",
+    "password": "123",
+    "fullname": "Lê Minh Thắng",
+    "className": "12A2",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a2_32",
+    "password": "123",
+    "fullname": "Huỳnh Ngô Quốc Thiện",
+    "className": "12A2",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a2_33",
+    "password": "123",
+    "fullname": "Trần Ngọc Thiện",
+    "className": "12A2",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a2_34",
+    "password": "123",
+    "fullname": "Lê Quốc Thịnh",
+    "className": "12A2",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a2_35",
+    "password": "123",
+    "fullname": "Dương Anh Thư",
+    "className": "12A2",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a2_36",
+    "password": "123",
+    "fullname": "Lê Nguyễn Anh Thư",
+    "className": "12A2",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a2_37",
+    "password": "123",
+    "fullname": "Minh Thư",
+    "className": "12A2",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a2_38",
+    "password": "123",
+    "fullname": "Huỳnh Trang Ngọc Tiên",
+    "className": "12A2",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a2_39",
+    "password": "123",
+    "fullname": "Lê Đức Tới",
+    "className": "12A2",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a2_40",
+    "password": "123",
+    "fullname": "Phan Thị Minh Trang",
+    "className": "12A2",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a2_41",
+    "password": "123",
+    "fullname": "Phạm Hoàng Hà Trâm",
+    "className": "12A2",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a2_42",
+    "password": "123",
+    "fullname": "Nguyễn Quốc Xuân Tường",
+    "className": "12A2",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a2_43",
+    "password": "123",
+    "fullname": "Tô Trần Minh Vy",
+    "className": "12A2",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a2_44",
+    "password": "123",
+    "fullname": "Nguyễn Ngọc Thiên Ý",
+    "className": "12A2",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs2a3_02",
+    "password": "123",
+    "fullname": "Nguyễn Ngọc Hoài Ánh",
+    "className": "12A3",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs2a3_03",
+    "password": "123",
+    "fullname": "Trần Khánh Băng",
+    "className": "12A3",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs2a3_04",
+    "password": "123",
+    "fullname": "Nguyễn Bảo Châu",
+    "className": "12A3",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs2a3_05",
+    "password": "123",
+    "fullname": "Lê Đặng Thanh Duy",
+    "className": "12A3",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs2a3_06",
+    "password": "123",
+    "fullname": "Đinh Tiến Dưỡng",
+    "className": "12A3",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs2a3_07",
+    "password": "123",
+    "fullname": "Nguyễn Tấn Đạt",
+    "className": "12A3",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs2a3_08",
+    "password": "123",
+    "fullname": "Trần Gia Hân",
+    "className": "12A3",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs2a3_09",
+    "password": "123",
+    "fullname": "Nguyễn Minh Hoàng",
+    "className": "12A3",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs2a30",
+    "password": "123",
+    "fullname": "Bùi Phúc Hưng",
+    "className": "12A3",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs2a31",
+    "password": "123",
+    "fullname": "Võ Minh Khang",
+    "className": "12A3",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs2a32",
+    "password": "123",
+    "fullname": "Đỗ Nguyễn Gia Khánh",
+    "className": "12A3",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs2a33",
+    "password": "123",
+    "fullname": "Cao Gia Kiệt",
+    "className": "12A3",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs2a34",
+    "password": "123",
+    "fullname": "Đào Duy Anh Kiệt",
+    "className": "12A3",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs2a35",
+    "password": "123",
+    "fullname": "Lìu Huỳnh Bảo Kim",
+    "className": "12A3",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs2a36",
+    "password": "123",
+    "fullname": "Châu Bảo Linh",
+    "className": "12A3",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs2a37",
+    "password": "123",
+    "fullname": "Trương Quỳnh My",
+    "className": "12A3",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs2a38",
+    "password": "123",
+    "fullname": "Nguyễn Thị Kim Nguyên",
+    "className": "12A3",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs2a39",
+    "password": "123",
+    "fullname": "Nguyễn Tiến Thiện Nhân",
+    "className": "12A3",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs2a3_20",
+    "password": "123",
+    "fullname": "Phan Văn Nhật",
+    "className": "12A3",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs2a3_21",
+    "password": "123",
+    "fullname": "Lê Uyên Nhi",
+    "className": "12A3",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs2a3_22",
+    "password": "123",
+    "fullname": "Đỗ Gia Phong",
+    "className": "12A3",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs2a3_23",
+    "password": "123",
+    "fullname": "Đỗ Gia Phú",
+    "className": "12A3",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs2a3_24",
+    "password": "123",
+    "fullname": "Vòong Chi Phún",
+    "className": "12A3",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs2a3_25",
+    "password": "123",
+    "fullname": "Huỳnh Nhã Phương",
+    "className": "12A3",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs2a3_26",
+    "password": "123",
+    "fullname": "Phạm Văn Quang",
+    "className": "12A3",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs2a3_27",
+    "password": "123",
+    "fullname": "Bùi Thành Tài",
+    "className": "12A3",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs2a3_28",
+    "password": "123",
+    "fullname": "Lai Quốc Thái",
+    "className": "12A3",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs2a3_29",
+    "password": "123",
+    "fullname": "Lê Đức Hải Thanh",
+    "className": "12A3",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs2a3_30",
+    "password": "123",
+    "fullname": "Hồ Văn Trí Thiện",
+    "className": "12A3",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs2a3_31",
+    "password": "123",
+    "fullname": "Võ Minh Thông",
+    "className": "12A3",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs2a3_32",
+    "password": "123",
+    "fullname": "Nguyễn Thị Thu Thúy",
+    "className": "12A3",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs2a3_33",
+    "password": "123",
+    "fullname": "Trần Ngọc Anh Thư",
+    "className": "12A3",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs2a3_34",
+    "password": "123",
+    "fullname": "Trần Nguyễn Anh Thư",
+    "className": "12A3",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs2a3_35",
+    "password": "123",
+    "fullname": "Trương Nguyễn Huyền Trang",
+    "className": "12A3",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs2a3_36",
+    "password": "123",
+    "fullname": "Nguyễn Thị Mỹ Trâm",
+    "className": "12A3",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs2a3_37",
+    "password": "123",
+    "fullname": "Nguyễn Bảo Trân",
+    "className": "12A3",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs2a3_38",
+    "password": "123",
+    "fullname": "Nguyễn Huỳnh Bảo Trân",
+    "className": "12A3",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs2a3_39",
+    "password": "123",
+    "fullname": "Lê Gia Uyển",
+    "className": "12A3",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs2a3_40",
+    "password": "123",
+    "fullname": "Huỳnh Lê Thảo Vân",
+    "className": "12A3",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs2a3_41",
+    "password": "123",
+    "fullname": "Hồ Sắm Vậy",
+    "className": "12A3",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs2a3_42",
+    "password": "123",
+    "fullname": "Mai Thanh Vũ",
+    "className": "12A3",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs2a3_43",
+    "password": "123",
+    "fullname": "Huỳnh Việt Vương",
+    "className": "12A3",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs2a3_44",
+    "password": "123",
+    "fullname": "Lý Thảo Vy",
+    "className": "12A3",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs2a3_45",
+    "password": "123",
+    "fullname": "Nguyễn Thị Thảo Vy",
+    "className": "12A3",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs2a3_01",
+    "password": "123",
+    "fullname": "Đỗ Võ Quỳnh Anh",
+    "className": "12A3",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c4_01",
+    "password": "123",
+    "fullname": "Đỗ Võ Quỳnh Anh",
+    "className": "12C4",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c4_02",
+    "password": "123",
+    "fullname": "Huỳnh Thị Ngọc Châu",
+    "className": "12C4",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c4_03",
+    "password": "123",
+    "fullname": "Huỳnh Công Cường",
+    "className": "12C4",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c4_04",
+    "password": "123",
+    "fullname": "Nguyễn Phan Thành Danh",
+    "className": "12C4",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c4_05",
+    "password": "123",
+    "fullname": "Đặng Phan Kỳ Diệu",
+    "className": "12C4",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c4_06",
+    "password": "123",
+    "fullname": "Hồ Huy Hải",
+    "className": "12C4",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c4_07",
+    "password": "123",
+    "fullname": "Thới Hải",
+    "className": "12C4",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c4_08",
+    "password": "123",
+    "fullname": "Lỷ Gia Hân",
+    "className": "12C4",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c4_09",
+    "password": "123",
+    "fullname": "Nguyễn Chi Hiên",
+    "className": "12C4",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c4_10",
+    "password": "123",
+    "fullname": "Đặng Ngọc Hiếu",
+    "className": "12C4",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c4_11",
+    "password": "123",
+    "fullname": "Trần Quang Huy",
+    "className": "12C4",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c4_12",
+    "password": "123",
+    "fullname": "Phan Minh Hưng",
+    "className": "12C4",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c4_13",
+    "password": "123",
+    "fullname": "Vòng Nhục Inh",
+    "className": "12C4",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c4_14",
+    "password": "123",
+    "fullname": "Nguyễn Anh Khôi",
+    "className": "12C4",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c4_15",
+    "password": "123",
+    "fullname": "Nguyễn Thị Thu Lam",
+    "className": "12C4",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c4_16",
+    "password": "123",
+    "fullname": "Nguyễn Nguyễn Hoàng Lâm",
+    "className": "12C4",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c4_17",
+    "password": "123",
+    "fullname": "Hà Thị Trúc Linh",
+    "className": "12C4",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c4_18",
+    "password": "123",
+    "fullname": "Trần Thị Bích Ly",
+    "className": "12C4",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c4_19",
+    "password": "123",
+    "fullname": "Đặng Ngọc Xuân Mai",
+    "className": "12C4",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c4_20",
+    "password": "123",
+    "fullname": "Trần Ngọc Thảo My",
+    "className": "12C4",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c4_21",
+    "password": "123",
+    "fullname": "Nguyễn Phan Thành Nghiệp",
+    "className": "12C4",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c4_22",
+    "password": "123",
+    "fullname": "Lô Trí Nguyên",
+    "className": "12C4",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c4_23",
+    "password": "123",
+    "fullname": "Nguyễn Thành Nhẫn",
+    "className": "12C4",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c4_24",
+    "password": "123",
+    "fullname": "Tô Thị Bích Nhi",
+    "className": "12C4",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c4_25",
+    "password": "123",
+    "fullname": "Trần Tuệ Nhi",
+    "className": "12C4",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c4_26",
+    "password": "123",
+    "fullname": "Phan Trọng Phúc",
+    "className": "12C4",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c4_27",
+    "password": "123",
+    "fullname": "Sỳ Ỳ Phúc",
+    "className": "12C4",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c4_28",
+    "password": "123",
+    "fullname": "Thới Nguyễn Đình Quân",
+    "className": "12C4",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c4_29",
+    "password": "123",
+    "fullname": "Đặng Thị Bích Quyên",
+    "className": "12C4",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c4_30",
+    "password": "123",
+    "fullname": "Trần Anh Thảo",
+    "className": "12C4",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c4_31",
+    "password": "123",
+    "fullname": "Trương Diệu Thùy",
+    "className": "12C4",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c4_32",
+    "password": "123",
+    "fullname": "Nguyễn Minh Thư",
+    "className": "12C4",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c4_33",
+    "password": "123",
+    "fullname": "Nguyễn Thị Kim Thư",
+    "className": "12C4",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c4_34",
+    "password": "123",
+    "fullname": "Mai Trường Tiến",
+    "className": "12C4",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c4_35",
+    "password": "123",
+    "fullname": "Nguyễn Mai Công Tiến",
+    "className": "12C4",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c4_36",
+    "password": "123",
+    "fullname": "Huỳnh Thành Tình",
+    "className": "12C4",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c4_37",
+    "password": "123",
+    "fullname": "Nguyễn Đức Trọng",
+    "className": "12C4",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c4_38",
+    "password": "123",
+    "fullname": "Phan Tuấn Tú",
+    "className": "12C4",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c4_39",
+    "password": "123",
+    "fullname": "Võ Minh Tuân",
+    "className": "12C4",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c4_40",
+    "password": "123",
+    "fullname": "Phan Hoài Trúc Uyên",
+    "className": "12C4",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c4_41",
+    "password": "123",
+    "fullname": "Nguyễn Thị Yến Vi",
+    "className": "12C4",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c4_42",
+    "password": "123",
+    "fullname": "Trương Dương Bích Viên",
+    "className": "12C4",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c5_01",
+    "password": "123",
+    "fullname": "Võ Quốc Tuấn Anh",
+    "className": "12C5",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c5_02",
+    "password": "123",
+    "fullname": "Dương Hồ Nguyên Bảo",
+    "className": "12C5",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c5_03",
+    "password": "123",
+    "fullname": "Nguyễn Gia Bảo",
+    "className": "12C5",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c5_04",
+    "password": "123",
+    "fullname": "Trần Thị Kim Chi",
+    "className": "12C5",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c5_05",
+    "password": "123",
+    "fullname": "Trần Thị Ngọc Diệp",
+    "className": "12C5",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c5_06",
+    "password": "123",
+    "fullname": "Võ Phạm Hiền Diệu",
+    "className": "12C5",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c5_07",
+    "password": "123",
+    "fullname": "Nguyễn Thế Thành Đạt",
+    "className": "12C5",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c5_08",
+    "password": "123",
+    "fullname": "Võ Văn Hạ",
+    "className": "12C5",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c5_09",
+    "password": "123",
+    "fullname": "Nguyễn Đức Hào",
+    "className": "12C5",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c5_10",
+    "password": "123",
+    "fullname": "Biện Hồ Thanh Hằng",
+    "className": "12C5",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c5_11",
+    "password": "123",
+    "fullname": "Võ Thị Trúc Hương",
+    "className": "12C5",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c5_12",
+    "password": "123",
+    "fullname": "Võ Ngọc Diễm Hường",
+    "className": "12C5",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c5_13",
+    "password": "123",
+    "fullname": "Bùi Thanh Duy Khánh",
+    "className": "12C5",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c5_14",
+    "password": "123",
+    "fullname": "Huỳnh Ngọc Khoa",
+    "className": "12C5",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c5_15",
+    "password": "123",
+    "fullname": "Hứa Biện Chi Linh",
+    "className": "12C5",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c5_16",
+    "password": "123",
+    "fullname": "Nguyễn Triệu Long",
+    "className": "12C5",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c5_17",
+    "password": "123",
+    "fullname": "Huỳnh Thị Thảo Mi",
+    "className": "12C5",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c5_18",
+    "password": "123",
+    "fullname": "Đỗ Hoài Bảo Nam",
+    "className": "12C5",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c5_19",
+    "password": "123",
+    "fullname": "Phạm Thị Bích Ngân",
+    "className": "12C5",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c5_20",
+    "password": "123",
+    "fullname": "Trần Gia Ngân",
+    "className": "12C5",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c5_21",
+    "password": "123",
+    "fullname": "Phan Thiên Phú",
+    "className": "12C5",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c5_22",
+    "password": "123",
+    "fullname": "Bùi Thị Kim Phượng",
+    "className": "12C5",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c5_23",
+    "password": "123",
+    "fullname": "Trần Trung Quang",
+    "className": "12C5",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c5_24",
+    "password": "123",
+    "fullname": "Võ Minh Su",
+    "className": "12C5",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c5_25",
+    "password": "123",
+    "fullname": "Trần Duy Tấn",
+    "className": "12C5",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c5_26",
+    "password": "123",
+    "fullname": "Võ Đại Dương Tấn",
+    "className": "12C5",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c5_27",
+    "password": "123",
+    "fullname": "Vi Đức Thạch",
+    "className": "12C5",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c5_28",
+    "password": "123",
+    "fullname": "Tô Thanh Thắng",
+    "className": "12C5",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c5_29",
+    "password": "123",
+    "fullname": "Huỳnh Mai Giang Thùy",
+    "className": "12C5",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c5_30",
+    "password": "123",
+    "fullname": "Nguyễn Văn Tiến",
+    "className": "12C5",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c5_31",
+    "password": "123",
+    "fullname": "Đỗ Thị Hạnh Trang",
+    "className": "12C5",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c5_32",
+    "password": "123",
+    "fullname": "Nguyễn Xuân Trúc",
+    "className": "12C5",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c5_33",
+    "password": "123",
+    "fullname": "Nguyễn Thanh Trung",
+    "className": "12C5",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c5_34",
+    "password": "123",
+    "fullname": "Trần Xuân Trương",
+    "className": "12C5",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c5_35",
+    "password": "123",
+    "fullname": "Nguyễn Ngọc Cẩm Tú",
+    "className": "12C5",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c5_36",
+    "password": "123",
+    "fullname": "Phạm Thái Tú",
+    "className": "12C5",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c5_37",
+    "password": "123",
+    "fullname": "Trang Minh Tú",
+    "className": "12C5",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c5_38",
+    "password": "123",
+    "fullname": "Diệp Trần Thúy Vân",
+    "className": "12C5",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c5_39",
+    "password": "123",
+    "fullname": "Hong Thị Ngọc Vân",
+    "className": "12C5",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c5_40",
+    "password": "123",
+    "fullname": "Tăng Nguyễn Nhi Viện",
+    "className": "12C5",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c5_41",
+    "password": "123",
+    "fullname": "Hoàng Quốc Vương",
+    "className": "12C5",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c5_42",
+    "password": "123",
+    "fullname": "Trần Thảo Vy",
+    "className": "12C5",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c5_43",
+    "password": "123",
+    "fullname": "Đỗ Thị Như Ý",
+    "className": "12C5",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c6_01",
+    "password": "123",
+    "fullname": "Nguyễn Hoàng Bảo",
+    "className": "12C6",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c6_02",
+    "password": "123",
+    "fullname": "Lê Xuân Ngọc Châu",
+    "className": "12C6",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c6_03",
+    "password": "123",
+    "fullname": "Nguyễn Ngọc Trúc Chi",
+    "className": "12C6",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c6_04",
+    "password": "123",
+    "fullname": "Vòng Khánh Dẩu",
+    "className": "12C6",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c6_05",
+    "password": "123",
+    "fullname": "Bùi Linh Đan",
+    "className": "12C6",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c6_06",
+    "password": "123",
+    "fullname": "Đàm Tiến Đạt",
+    "className": "12C6",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c6_07",
+    "password": "123",
+    "fullname": "Đào Danh Minh Đạt",
+    "className": "12C6",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c6_08",
+    "password": "123",
+    "fullname": "Huỳnh Hồ Anh Hào",
+    "className": "12C6",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c6_09",
+    "password": "123",
+    "fullname": "Trương Thị Diễm Hằng",
+    "className": "12C6",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c6_10",
+    "password": "123",
+    "fullname": "Biện Thị Gia Hân",
+    "className": "12C6",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c6_11",
+    "password": "123",
+    "fullname": "Chế Văn Hoàng",
+    "className": "12C6",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c6_12",
+    "password": "123",
+    "fullname": "Lằm Cooc Hồng",
+    "className": "12C6",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c6_13",
+    "password": "123",
+    "fullname": "Nguyễn Xuân Huy",
+    "className": "12C6",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c6_14",
+    "password": "123",
+    "fullname": "Nguyễn Anh Kha",
+    "className": "12C6",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c6_15",
+    "password": "123",
+    "fullname": "Dương Tuấn Khang",
+    "className": "12C6",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c6_16",
+    "password": "123",
+    "fullname": "Ngô Tuấn Khang",
+    "className": "12C6",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c6_17",
+    "password": "123",
+    "fullname": "Nguyễn Bảo Khang",
+    "className": "12C6",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c6_18",
+    "password": "123",
+    "fullname": "Chướng Minh Khanh",
+    "className": "12C6",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c6_19",
+    "password": "123",
+    "fullname": "Dương Sỹ Khanh",
+    "className": "12C6",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c6_20",
+    "password": "123",
+    "fullname": "Phạm Bảo Khanh",
+    "className": "12C6",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c6_21",
+    "password": "123",
+    "fullname": "Võ Tuấn Kiệt",
+    "className": "12C6",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c6_22",
+    "password": "123",
+    "fullname": "Mai Thị Kim Linh",
+    "className": "12C6",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c6_23",
+    "password": "123",
+    "fullname": "Nguyễn Bích Ly",
+    "className": "12C6",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c6_24",
+    "password": "123",
+    "fullname": "Nguyễn Thị Phương Ly",
+    "className": "12C6",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c6_25",
+    "password": "123",
+    "fullname": "Huỳnh Quốc Nam",
+    "className": "12C6",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c6_26",
+    "password": "123",
+    "fullname": "La Đức Hoài Nam",
+    "className": "12C6",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c6_27",
+    "password": "123",
+    "fullname": "Nguyễn Bích Ngân",
+    "className": "12C6",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c6_28",
+    "password": "123",
+    "fullname": "Đoàn Nông Bảo Ngọc",
+    "className": "12C6",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c6_29",
+    "password": "123",
+    "fullname": "Nguyễn Kim Bảo Ngọc",
+    "className": "12C6",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c6_30",
+    "password": "123",
+    "fullname": "Nguyễn Thị Hồng Ngọc",
+    "className": "12C6",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c6_31",
+    "password": "123",
+    "fullname": "Lai Tông Diễm Như",
+    "className": "12C6",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c6_32",
+    "password": "123",
+    "fullname": "Nguyễn Huỳnh Gia Như",
+    "className": "12C6",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c6_33",
+    "password": "123",
+    "fullname": "Trần Kiều Oanh",
+    "className": "12C6",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c6_34",
+    "password": "123",
+    "fullname": "Lê Đặng Tuyết Pho",
+    "className": "12C6",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c6_35",
+    "password": "123",
+    "fullname": "Vy Thị Bích Phương",
+    "className": "12C6",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c6_36",
+    "password": "123",
+    "fullname": "Nguyễn Lê Phương Thảo",
+    "className": "12C6",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c6_37",
+    "password": "123",
+    "fullname": "Nguyễn Thị Minh Thư",
+    "className": "12C6",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c6_38",
+    "password": "123",
+    "fullname": "Chu Ngọc Trâm",
+    "className": "12C6",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c6_39",
+    "password": "123",
+    "fullname": "Phạm Hoài Triết",
+    "className": "12C6",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c6_40",
+    "password": "123",
+    "fullname": "Vy Thiên Trọng",
+    "className": "12C6",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c6_41",
+    "password": "123",
+    "fullname": "Phùng Xuyến Kim Vân",
+    "className": "12C6",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12c6_42",
+    "password": "123",
+    "fullname": "Me Hoàng Hải Yến",
+    "className": "12C6",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d7_01",
+    "password": "123",
+    "fullname": "Lữ Quốc An",
+    "className": "12D7",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d7_02",
+    "password": "123",
+    "fullname": "Đào Lê Ngọc Anh",
+    "className": "12D7",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d7_03",
+    "password": "123",
+    "fullname": "Võ Huỳnh Thiên Ân",
+    "className": "12D7",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d7_04",
+    "password": "123",
+    "fullname": "Nguyễn Thế Bảo",
+    "className": "12D7",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d7_05",
+    "password": "123",
+    "fullname": "Huỳnh Đức Duy",
+    "className": "12D7",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d7_06",
+    "password": "123",
+    "fullname": "Nguyễn Trương Trúc Duyên",
+    "className": "12D7",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d7_07",
+    "password": "123",
+    "fullname": "Nguyễn Thanh Dương",
+    "className": "12D7",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d7_08",
+    "password": "123",
+    "fullname": "Trần Lê Ngọc Hân",
+    "className": "12D7",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d7_09",
+    "password": "123",
+    "fullname": "Trương Gia Hân",
+    "className": "12D7",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d7_10",
+    "password": "123",
+    "fullname": "Trần Văn Hoà",
+    "className": "12D7",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d7_11",
+    "password": "123",
+    "fullname": "Hứa Hoàng Khang",
+    "className": "12D7",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d7_12",
+    "password": "123",
+    "fullname": "Trần Hữu Khang",
+    "className": "12D7",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d7_13",
+    "password": "123",
+    "fullname": "Lê Trương Tường Lam",
+    "className": "12D7",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d7_14",
+    "password": "123",
+    "fullname": "Nguyễn Thị Thanh Lâm",
+    "className": "12D7",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d7_15",
+    "password": "123",
+    "fullname": "Nguyễn Công Lập",
+    "className": "12D7",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d7_16",
+    "password": "123",
+    "fullname": "Nguyễn Công Lý",
+    "className": "12D7",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d7_17",
+    "password": "123",
+    "fullname": "Trịnh Quế Mẫn",
+    "className": "12D7",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d7_18",
+    "password": "123",
+    "fullname": "Nguyễn Nhật Minh",
+    "className": "12D7",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d7_19",
+    "password": "123",
+    "fullname": "Phùng Nguyễn Thảo My",
+    "className": "12D7",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d7_20",
+    "password": "123",
+    "fullname": "Nguyễn Thị Thúy Nga",
+    "className": "12D7",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d7_21",
+    "password": "123",
+    "fullname": "Nguyễn Đỗ Thanh Ngân",
+    "className": "12D7",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d7_22",
+    "password": "123",
+    "fullname": "Nguyễn Trần Thu Ngân",
+    "className": "12D7",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d7_23",
+    "password": "123",
+    "fullname": "Nguyễn Hoàng Khánh Ngọc",
+    "className": "12D7",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d7_24",
+    "password": "123",
+    "fullname": "Nguyễn Trần Thảo Ngọc",
+    "className": "12D7",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d7_25",
+    "password": "123",
+    "fullname": "Nguyễn Phạm Minh Nhật",
+    "className": "12D7",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d7_26",
+    "password": "123",
+    "fullname": "Biền Thị Huỳnh Như",
+    "className": "12D7",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d7_27",
+    "password": "123",
+    "fullname": "Đoàn Thị Quỳnh Như",
+    "className": "12D7",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d7_28",
+    "password": "123",
+    "fullname": "Mai Nguyễn Hoàng Phúc",
+    "className": "12D7",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d7_29",
+    "password": "123",
+    "fullname": "Lê Thị Phụng",
+    "className": "12D7",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d7_30",
+    "password": "123",
+    "fullname": "Nguyễn Gia Phước",
+    "className": "12D7",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d7_31",
+    "password": "123",
+    "fullname": "Nguyễn Trượng Nam Phương",
+    "className": "12D7",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d7_32",
+    "password": "123",
+    "fullname": "Nguyễn Lê Duy Quang",
+    "className": "12D7",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d7_33",
+    "password": "123",
+    "fullname": "Nguyễn Thị Nhật Quy",
+    "className": "12D7",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d7_34",
+    "password": "123",
+    "fullname": "Nguyễn Ngọc Lệ Quyên",
+    "className": "12D7",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d7_35",
+    "password": "123",
+    "fullname": "Nguyễn Thị Trúc Quỳnh",
+    "className": "12D7",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d7_36",
+    "password": "123",
+    "fullname": "Hong Tằng Sếnh",
+    "className": "12D7",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d7_37",
+    "password": "123",
+    "fullname": "Nguyễn Thị Băng Tâm",
+    "className": "12D7",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d7_38",
+    "password": "123",
+    "fullname": "Lương Thị Ngọc Thuý",
+    "className": "12D7",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d7_39",
+    "password": "123",
+    "fullname": "Nguyễn Minh Thư",
+    "className": "12D7",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d7_40",
+    "password": "123",
+    "fullname": "Nguyễn Thị Anh Thư",
+    "className": "12D7",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d7_41",
+    "password": "123",
+    "fullname": "Đinh Xuân Uyên Trang",
+    "className": "12D7",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d7_42",
+    "password": "123",
+    "fullname": "Mai Thị Ngọc Trâm",
+    "className": "12D7",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d7_43",
+    "password": "123",
+    "fullname": "Nguyễn Ngọc Tuyết Trân",
+    "className": "12D7",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d7_44",
+    "password": "123",
+    "fullname": "Nguyễn Minh Triết",
+    "className": "12D7",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d7_45",
+    "password": "123",
+    "fullname": "Đỗ Lê Thanh Tú",
+    "className": "12D7",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d7_46",
+    "password": "123",
+    "fullname": "Huỳnh Xuân Tý",
+    "className": "12D7",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d7_47",
+    "password": "123",
+    "fullname": "Nguyễn Thị Thanh Vân",
+    "className": "12D7",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d8_01",
+    "password": "123",
+    "fullname": "Lê Thị Mỹ Dung",
+    "className": "12D8",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d8_02",
+    "password": "123",
+    "fullname": "Nguyễn Hữu Đạt",
+    "className": "12D8",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d8_03",
+    "password": "123",
+    "fullname": "Phạm Đình Nguyễn Tiến Đạt",
+    "className": "12D8",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d8_04",
+    "password": "123",
+    "fullname": "Nguyễn Thái Hào",
+    "className": "12D8",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d8_05",
+    "password": "123",
+    "fullname": "Nguyễn Trọng Hiếu",
+    "className": "12D8",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d8_06",
+    "password": "123",
+    "fullname": "Nguyễn Mạnh Huy",
+    "className": "12D8",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d8_07",
+    "password": "123",
+    "fullname": "Nguyễn Phan Duy Kha",
+    "className": "12D8",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d8_08",
+    "password": "123",
+    "fullname": "Nguyễn Nhật Tuấn Khang",
+    "className": "12D8",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d8_09",
+    "password": "123",
+    "fullname": "Mai Chí Kiệt",
+    "className": "12D8",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d8_10",
+    "password": "123",
+    "fullname": "Nguyễn Thành Luân",
+    "className": "12D8",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d8_11",
+    "password": "123",
+    "fullname": "Trương Tuệ Mẫn",
+    "className": "12D8",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d8_12",
+    "password": "123",
+    "fullname": "Ngô Nguyễn Hà Mi",
+    "className": "12D8",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d8_13",
+    "password": "123",
+    "fullname": "Nguyễn Đặng Hồng My",
+    "className": "12D8",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d8_14",
+    "password": "123",
+    "fullname": "Nguyễn Thị Trà My",
+    "className": "12D8",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d8_15",
+    "password": "123",
+    "fullname": "Phạm Thảo My",
+    "className": "12D8",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d8_16",
+    "password": "123",
+    "fullname": "Phan Văn Thị Nữ Hà My",
+    "className": "12D8",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d8_17",
+    "password": "123",
+    "fullname": "Phan Văn Thị Nữ Hà Mỹ",
+    "className": "12D8",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d8_18",
+    "password": "123",
+    "fullname": "Nguyễn Tuấn Nam",
+    "className": "12D8",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d8_19",
+    "password": "123",
+    "fullname": "Ngô Đỗ Bảo Ngân",
+    "className": "12D8",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d8_20",
+    "password": "123",
+    "fullname": "Phạm Thành Nghĩa",
+    "className": "12D8",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d8_21",
+    "password": "123",
+    "fullname": "Lê Phạm Ánh Ngọc",
+    "className": "12D8",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d8_22",
+    "password": "123",
+    "fullname": "Nguyễn Bích Ngọc",
+    "className": "12D8",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d8_23",
+    "password": "123",
+    "fullname": "Đào Thị Yến Nhi",
+    "className": "12D8",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d8_24",
+    "password": "123",
+    "fullname": "Dương Minh Quỳnh Như",
+    "className": "12D8",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d8_25",
+    "password": "123",
+    "fullname": "Dắn Hình Phương Phương",
+    "className": "12D8",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d8_26",
+    "password": "123",
+    "fullname": "Lê Anh Quân",
+    "className": "12D8",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d8_27",
+    "password": "123",
+    "fullname": "Nguyễn Đặng Như Quỳnh",
+    "className": "12D8",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d8_28",
+    "password": "123",
+    "fullname": "Nguyễn Đỗ Như Quỳnh",
+    "className": "12D8",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d8_29",
+    "password": "123",
+    "fullname": "Nguyễn Ngọc Nhật Tân",
+    "className": "12D8",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d8_30",
+    "password": "123",
+    "fullname": "Huỳnh Xuân Tấn",
+    "className": "12D8",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d8_31",
+    "password": "123",
+    "fullname": "Phạm Nguyễn Kim Thảo",
+    "className": "12D8",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d8_32",
+    "password": "123",
+    "fullname": "Đinh Việt Thắng",
+    "className": "12D8",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d8_33",
+    "password": "123",
+    "fullname": "Nguyễn Thị Thanh Thủy",
+    "className": "12D8",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d8_34",
+    "password": "123",
+    "fullname": "Đoàn Nguyễn Anh Thư",
+    "className": "12D8",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d8_35",
+    "password": "123",
+    "fullname": "Huỳnh Nhật Nguyên Thư",
+    "className": "12D8",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d8_36",
+    "password": "123",
+    "fullname": "Trần Chung Tín",
+    "className": "12D8",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d8_37",
+    "password": "123",
+    "fullname": "Tăng Thị Trinh Trinh",
+    "className": "12D8",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d8_38",
+    "password": "123",
+    "fullname": "Nguyễn Đức Trọng",
+    "className": "12D8",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d8_39",
+    "password": "123",
+    "fullname": "Lương Ngọc Lan Uyên",
+    "className": "12D8",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d8_40",
+    "password": "123",
+    "fullname": "Lê Thị Hoàng Vân",
+    "className": "12D8",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d8_41",
+    "password": "123",
+    "fullname": "Ngô Anh Vũ",
+    "className": "12D8",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d8_42",
+    "password": "123",
+    "fullname": "Lê Thị Hồng Vy",
+    "className": "12D8",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d8_43",
+    "password": "123",
+    "fullname": "Phan Thị Tường Vy",
+    "className": "12D8",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d8_44",
+    "password": "123",
+    "fullname": "Đinh Nguyễn Như Ý",
+    "className": "12D8",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d8_45",
+    "password": "123",
+    "fullname": "Lê Thị Hồng Yến",
+    "className": "12D8",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d9_01",
+    "password": "123",
+    "fullname": "Đào Thái Bảo",
+    "className": "12D9",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d9_02",
+    "password": "123",
+    "fullname": "Nguyễn Trường Biên",
+    "className": "12D9",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d9_03",
+    "password": "123",
+    "fullname": "Ngô Minh Hải",
+    "className": "12D9",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d9_04",
+    "password": "123",
+    "fullname": "Tằng Bảo Hân",
+    "className": "12D9",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d9_05",
+    "password": "123",
+    "fullname": "Nguyễn Trọng Hoàng",
+    "className": "12D9",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d9_06",
+    "password": "123",
+    "fullname": "Đoàn Vĩnh Hưng",
+    "className": "12D9",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d9_07",
+    "password": "123",
+    "fullname": "Trần Minh Khang",
+    "className": "12D9",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d9_08",
+    "password": "123",
+    "fullname": "Dương Nhật Khanh",
+    "className": "12D9",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d9_09",
+    "password": "123",
+    "fullname": "Nguyễn Quốc Khánh",
+    "className": "12D9",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d9_10",
+    "password": "123",
+    "fullname": "Nông Ngọc Gia Khánh",
+    "className": "12D9",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d9_11",
+    "password": "123",
+    "fullname": "Nguyễn Kim Khuê",
+    "className": "12D9",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d9_12",
+    "password": "123",
+    "fullname": "Trần Ngô Phú Lạc",
+    "className": "12D9",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d9_13",
+    "password": "123",
+    "fullname": "Nguyễn Thị Mỹ Lệ",
+    "className": "12D9",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d9_14",
+    "password": "123",
+    "fullname": "Phạm Hoàng Linh",
+    "className": "12D9",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d9_15",
+    "password": "123",
+    "fullname": "Dương Huỳnh Long",
+    "className": "12D9",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d9_16",
+    "password": "123",
+    "fullname": "Lê Thái Long",
+    "className": "12D9",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d9_17",
+    "password": "123",
+    "fullname": "Trần Thị Mỹ Lương",
+    "className": "12D9",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d9_18",
+    "password": "123",
+    "fullname": "Nguyễn Thu Ngân",
+    "className": "12D9",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d9_19",
+    "password": "123",
+    "fullname": "Phùng Thảo Ngân",
+    "className": "12D9",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d9_20",
+    "password": "123",
+    "fullname": "Dương Thảo Nguyên",
+    "className": "12D9",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d9_21",
+    "password": "123",
+    "fullname": "Nguyễn Vũ Nguyên",
+    "className": "12D9",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d9_22",
+    "password": "123",
+    "fullname": "Lê Thị Minh Nguyệt",
+    "className": "12D9",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d9_23",
+    "password": "123",
+    "fullname": "Phạm Thảo Nhi",
+    "className": "12D9",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d9_24",
+    "password": "123",
+    "fullname": "Thái Hồng Tuyết Nhi",
+    "className": "12D9",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d9_25",
+    "password": "123",
+    "fullname": "Võ Quỳnh Như",
+    "className": "12D9",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d9_26",
+    "password": "123",
+    "fullname": "Nguyễn Ngọc Bảo Phương",
+    "className": "12D9",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d9_27",
+    "password": "123",
+    "fullname": "Vỏ Thị Kim Phượng",
+    "className": "12D9",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d9_28",
+    "password": "123",
+    "fullname": "Võ Tấn Tài",
+    "className": "12D9",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d9_29",
+    "password": "123",
+    "fullname": "Nguyễn Duy Tân",
+    "className": "12D9",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d9_30",
+    "password": "123",
+    "fullname": "Mã Quốc Thành",
+    "className": "12D9",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d9_31",
+    "password": "123",
+    "fullname": "Thông Thị Thu Thủy",
+    "className": "12D9",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d9_32",
+    "password": "123",
+    "fullname": "Hoàng Thị Minh Thư",
+    "className": "12D9",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d9_33",
+    "password": "123",
+    "fullname": "Nguyễn Hoàng Anh Thư",
+    "className": "12D9",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d9_34",
+    "password": "123",
+    "fullname": "Võ Nguyễn Minh Thư",
+    "className": "12D9",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d9_35",
+    "password": "123",
+    "fullname": "Nguyễn Thị Kim Thương",
+    "className": "12D9",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d9_36",
+    "password": "123",
+    "fullname": "Ngô Thị Anh Thy",
+    "className": "12D9",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d9_37",
+    "password": "123",
+    "fullname": "Võ Thị Ngọc Trâm",
+    "className": "12D9",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d9_38",
+    "password": "123",
+    "fullname": "Nguyễn Thị Huyền Trân",
+    "className": "12D9",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d9_39",
+    "password": "123",
+    "fullname": "Nguyễn Thị Quế Trân",
+    "className": "12D9",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d9_40",
+    "password": "123",
+    "fullname": "Trần Bảo Trân",
+    "className": "12D9",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d9_41",
+    "password": "123",
+    "fullname": "Nguyễn Yến Trinh",
+    "className": "12D9",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d9_42",
+    "password": "123",
+    "fullname": "Huỳnh Ngọc Tú",
+    "className": "12D9",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d9_43",
+    "password": "123",
+    "fullname": "Lê Nguyễn Ánh Tuyết",
+    "className": "12D9",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d9_44",
+    "password": "123",
+    "fullname": "Nguyễn Hoàng Bảo Uyên",
+    "className": "12D9",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d9_45",
+    "password": "123",
+    "fullname": "Thái Quốc Việt",
+    "className": "12D9",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d9_46",
+    "password": "123",
+    "fullname": "Nguyễn Ngọc Như Ý",
+    "className": "12D9",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d10_01",
+    "password": "123",
+    "fullname": "Hong Lan Anh",
+    "className": "12D10",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d10_02",
+    "password": "123",
+    "fullname": "Trần Đăng Anh",
+    "className": "12D10",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d10_03",
+    "password": "123",
+    "fullname": "Dương Quốc Danh",
+    "className": "12D10",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d10_04",
+    "password": "123",
+    "fullname": "Nguyễn Thị Mỹ Duyên",
+    "className": "12D10",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d10_05",
+    "password": "123",
+    "fullname": "Huỳnh Viễn Dương",
+    "className": "12D10",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d10_06",
+    "password": "123",
+    "fullname": "Lê Tấn Đạt",
+    "className": "12D10",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d10_07",
+    "password": "123",
+    "fullname": "Lương Ngữ Quỳnh Giao",
+    "className": "12D10",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d10_08",
+    "password": "123",
+    "fullname": "Vương Minh Hằng",
+    "className": "12D10",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d10_09",
+    "password": "123",
+    "fullname": "Hồ Ngọc Hiền",
+    "className": "12D10",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d10_10",
+    "password": "123",
+    "fullname": "Nguyễn Huy Hoàng",
+    "className": "12D10",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d10_11",
+    "password": "123",
+    "fullname": "Nguyễn Lâm Anh Kha",
+    "className": "12D10",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d10_12",
+    "password": "123",
+    "fullname": "Trần Thế Khải",
+    "className": "12D10",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d10_13",
+    "password": "123",
+    "fullname": "Trần Vũ Khang",
+    "className": "12D10",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d10_14",
+    "password": "123",
+    "fullname": "Phạm Kim Khánh",
+    "className": "12D10",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d10_15",
+    "password": "123",
+    "fullname": "Cao Gia Kiệt",
+    "className": "12D10",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d10_16",
+    "password": "123",
+    "fullname": "Đàm Anh Kiệt",
+    "className": "12D10",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d10_17",
+    "password": "123",
+    "fullname": "Trần Đặng Tuấn Kiệt",
+    "className": "12D10",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d10_18",
+    "password": "123",
+    "fullname": "Hong Lam Liên",
+    "className": "12D10",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d10_19",
+    "password": "123",
+    "fullname": "Huỳnh Thị Bích Liên",
+    "className": "12D10",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d10_20",
+    "password": "123",
+    "fullname": "Trần Phi Long",
+    "className": "12D10",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d10_21",
+    "password": "123",
+    "fullname": "Dụng Khả Minh",
+    "className": "12D10",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d10_22",
+    "password": "123",
+    "fullname": "Ừng Văn Nghĩa",
+    "className": "12D10",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d10_23",
+    "password": "123",
+    "fullname": "Phạm Đặng Hoàng Nghiêm",
+    "className": "12D10",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d10_24",
+    "password": "123",
+    "fullname": "Cao Lê Khánh Ngọc",
+    "className": "12D10",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d10_25",
+    "password": "123",
+    "fullname": "Phan Minh Phú",
+    "className": "12D10",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d10_26",
+    "password": "123",
+    "fullname": "Cao Anh Quân",
+    "className": "12D10",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d10_27",
+    "password": "123",
+    "fullname": "Biền Thị Như Quỳnh",
+    "className": "12D10",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d10_28",
+    "password": "123",
+    "fullname": "Huỳnh Thị Minh Thảo",
+    "className": "12D10",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d10_29",
+    "password": "123",
+    "fullname": "Nguyễn Thị Thanh Thúy",
+    "className": "12D10",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d10_30",
+    "password": "123",
+    "fullname": "Lê Đặng Quỳnh Thư",
+    "className": "12D10",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d10_31",
+    "password": "123",
+    "fullname": "Nguyễn Minh Thư",
+    "className": "12D10",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d10_32",
+    "password": "123",
+    "fullname": "Lê Ngọc Huyền Trang",
+    "className": "12D10",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d10_33",
+    "password": "123",
+    "fullname": "Lý Ngọc Trang",
+    "className": "12D10",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d10_34",
+    "password": "123",
+    "fullname": "Đặng Thị Yến Trâm",
+    "className": "12D10",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d10_35",
+    "password": "123",
+    "fullname": "Trần Thị Thu Trúc",
+    "className": "12D10",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d10_36",
+    "password": "123",
+    "fullname": "Huỳnh Thanh Trung",
+    "className": "12D10",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d10_37",
+    "password": "123",
+    "fullname": "Bùi Hoàng Anh Tuấn",
+    "className": "12D10",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d10_38",
+    "password": "123",
+    "fullname": "Ngô Tấn Anh Tuấn",
+    "className": "12D10",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d10_39",
+    "password": "123",
+    "fullname": "Phùng Gia Tuyên",
+    "className": "12D10",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d10_40",
+    "password": "123",
+    "fullname": "Nguyễn Ánh Tuyết",
+    "className": "12D10",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d10_41",
+    "password": "123",
+    "fullname": "Phạm Thảo Vân",
+    "className": "12D10",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d10_42",
+    "password": "123",
+    "fullname": "Đặng Hà Bảo Vy",
+    "className": "12D10",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d10_43",
+    "password": "123",
+    "fullname": "Lê Thị Thảo Vy",
+    "className": "12D10",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12d10_44",
+    "password": "123",
+    "fullname": "Phạm Lê Hạ Vy",
+    "className": "12D10",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  }
 ];
 
 // Tài khoản giáo viên mặc định
