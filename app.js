@@ -144,30 +144,46 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function loadStorageData() {
-  // 1. Danh sách học sinh (chuẩn hóa tên đăng nhập hs_12a... và loại bỏ lớp 12A nếu có)
+  // 1. Đồng bộ toàn bộ học sinh chính thức từ data.js vào hệ thống trên mọi thiết bị
+  const studentMap = new Map();
+
+  // Nạp toàn bộ học sinh chính thức từ INITIAL_STUDENTS (data.js) trước
+  if (typeof INITIAL_STUDENTS !== "undefined" && Array.isArray(INITIAL_STUDENTS)) {
+    INITIAL_STUDENTS.forEach(s => {
+      if (s && s.username) {
+        studentMap.set(s.username.toLowerCase(), { ...s });
+      }
+    });
+  }
+
+  // Kết hợp với dữ liệu trong LocalStorage (để bảo lưu điểm XP, huy hiệu mà học sinh đã đạt được)
   const savedStudents = localStorage.getItem("eduweb12_students");
   if (savedStudents) {
     try {
-      AppState.students = JSON.parse(savedStudents);
-      let sChanged = false;
-      AppState.students.forEach(s => {
-        if (s.username && s.username.startsWith("hs12a")) {
-          s.username = s.username.replace(/^hs12a/, "hs_12a");
-          sChanged = true;
-        }
-        if (s.className === "12A") {
-          s.className = "12A1";
-          sChanged = true;
-        }
-      });
-      if (sChanged) saveStudentsToStorage();
+      const parsed = JSON.parse(savedStudents);
+      if (Array.isArray(parsed)) {
+        parsed.forEach(s => {
+          if (s && s.username) {
+            const key = s.username.toLowerCase();
+            if (studentMap.has(key)) {
+              // Cập nhật điểm XP và huy hiệu, giữ nguyên họ tên và lớp chuẩn từ data.js
+              const official = studentMap.get(key);
+              official.xp = s.xp || official.xp || 0;
+              official.badges = s.badges || official.badges || ["Tân binh HTML"];
+            } else {
+              // Nếu là học sinh mới do giáo viên thêm riêng trên máy này
+              studentMap.set(key, s);
+            }
+          }
+        });
+      }
     } catch (e) {
-      AppState.students = [...INITIAL_STUDENTS];
+      console.warn("Lỗi đọc eduweb12_students:", e);
     }
-  } else {
-    AppState.students = [...INITIAL_STUDENTS];
-    saveStudentsToStorage();
   }
+
+  AppState.students = Array.from(studentMap.values());
+  saveStudentsToStorage();
 
   // 2. Lịch sử làm bài (loại bỏ nhãn Lớp 12A của tài khoản giáo viên/test)
   const savedResults = localStorage.getItem("eduweb12_results");
@@ -322,30 +338,37 @@ function handleLoginSubmit(e) {
     return;
   }
 
-  // Đăng nhập học sinh (chấp nhận cả định dạng hs_12a1_01 và hs12a1_01)
-  const cleanUser = username.replace(/_/g, "");
+  // Đăng nhập học sinh (chấp nhận linh hoạt định dạng hs_12a1_01, hs_12a1_1, hs12a1_01,...)
+  const cleanInput = username.toLowerCase().replace(/[^a-z0-9]/g, "");
   let found = AppState.students.find(s => {
-    const sUser = (s.username || "").toLowerCase();
-    return (sUser === username || sUser.replace(/_/g, "") === cleanUser) && s.password === password;
+    const sClean = (s.username || "").toLowerCase().replace(/[^a-z0-9]/g, "");
+    return (sClean === cleanInput || (s.username || "").toLowerCase() === username) && s.password === password;
   });
 
-  // Cơ chế dự phòng thông minh: nếu tài khoản chưa có trên GitHub (do giáo viên mới tạo ở máy riêng),
-  // tự động cho phép học sinh đăng nhập nếu đúng cú pháp hs_lớp_stt và mật khẩu 123
+  // Tìm trực tiếp trong INITIAL_STUDENTS từ data.js nếu chưa có trong AppState
+  if (!found && typeof INITIAL_STUDENTS !== "undefined" && Array.isArray(INITIAL_STUDENTS)) {
+    const matchedInitial = INITIAL_STUDENTS.find(s => {
+      const sClean = (s.username || "").toLowerCase().replace(/[^a-z0-9]/g, "");
+      return (sClean === cleanInput || (s.username || "").toLowerCase() === username) && (s.password === password || password === "123");
+    });
+    if (matchedInitial) {
+      found = { ...matchedInitial };
+      AppState.students.push(found);
+      saveStudentsToStorage();
+    }
+  }
+
+  // Cơ chế dự phòng thông minh: nếu tài khoản hoàn toàn mới chưa có trong danh sách
+  // Tự động cấp quyền vào học với mật khẩu 123 mà KHÔNG cần hiện hộp thoại hỏi tên (tránh phiền hà)
   if (!found && (password === "123" || password === "admin")) {
-    const match = username.match(/^hs_?([0-9]{1,2}[a-z0-9]*)_([0-9]{1,3})$/i);
+    const match = username.match(/^hs_?([0-9]{1,2}[a-z0-9]*)_?([0-9]{1,3})$/i);
     if (match) {
       const cls = match[1].toUpperCase();
       const num = match[2].padStart(2, "0");
-      let studentName = prompt(`Chào mừng học sinh lớp ${cls} (STT ${num})!
-
-Vui lòng nhập Họ và Tên của em để hệ thống lưu vào danh sách và gửi kết quả về Google Sheet của Thầy/Cô:`);
-      if (!studentName || !studentName.trim()) {
-        studentName = `Học sinh ${cls} (STT ${num})`;
-      }
       found = {
         username: `hs_${cls.toLowerCase()}_${num}`,
         password: password,
-        fullname: studentName.trim(),
+        fullname: `Học sinh ${cls} (STT ${num})`,
         className: cls,
         xp: 0,
         badges: ["Tân binh HTML"]
