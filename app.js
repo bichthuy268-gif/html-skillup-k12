@@ -130,6 +130,14 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
       
+      if (parsedUser && parsedUser.role === "student" && parsedUser.username) {
+        const fresh = AppState.students.find(s => s.username.toLowerCase() === parsedUser.username.toLowerCase());
+        if (fresh) {
+          parsedUser.fullname = fresh.fullname;
+          parsedUser.className = fresh.className;
+          localStorage.setItem("eduweb12_current_user", JSON.stringify(parsedUser));
+        }
+      }
       AppState.currentUser = parsedUser;
       AppState.currentRole = AppState.currentUser.role || "student";
       updateHeaderUserUI();

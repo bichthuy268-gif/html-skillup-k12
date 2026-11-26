@@ -10615,7 +10615,7 @@ const INITIAL_STUDENTS = [
   {
     "username": "hs_12a1_01",
     "password": "123",
-    "fullname": "Lê Hoàng Kim An",
+    "fullname": "Huỳnh Ngọc Chí An",
     "className": "12A1",
     "xp": 0,
     "badges": [
@@ -10625,7 +10625,7 @@ const INITIAL_STUDENTS = [
   {
     "username": "hs_12a1_02",
     "password": "123",
-    "fullname": "Nguyễn Ngọc Hoài Ánh",
+    "fullname": "Nguyễn Võ Duy An",
     "className": "12A1",
     "xp": 0,
     "badges": [
@@ -10635,7 +10635,7 @@ const INITIAL_STUDENTS = [
   {
     "username": "hs_12a1_03",
     "password": "123",
-    "fullname": "Trần Khánh Băng",
+    "fullname": "Đoàn Việt Anh",
     "className": "12A1",
     "xp": 0,
     "badges": [
@@ -10645,7 +10645,7 @@ const INITIAL_STUDENTS = [
   {
     "username": "hs_12a1_04",
     "password": "123",
-    "fullname": "Nguyễn Bảo Châu",
+    "fullname": "Phạm Nguyễn Phương Anh",
     "className": "12A1",
     "xp": 0,
     "badges": [
@@ -10655,7 +10655,7 @@ const INITIAL_STUDENTS = [
   {
     "username": "hs_12a1_05",
     "password": "123",
-    "fullname": "Lê Đặng Thanh Duy",
+    "fullname": "Võ Lê Lan Anh",
     "className": "12A1",
     "xp": 0,
     "badges": [
@@ -10665,7 +10665,7 @@ const INITIAL_STUDENTS = [
   {
     "username": "hs_12a1_06",
     "password": "123",
-    "fullname": "Đinh Tiến Dưỡng",
+    "fullname": "Mai Như Đăng Duy",
     "className": "12A1",
     "xp": 0,
     "badges": [
@@ -10675,7 +10675,7 @@ const INITIAL_STUDENTS = [
   {
     "username": "hs_12a1_07",
     "password": "123",
-    "fullname": "Nguyễn Tấn Đạt",
+    "fullname": "Nguyễn Hoài Duy",
     "className": "12A1",
     "xp": 0,
     "badges": [
@@ -10685,7 +10685,7 @@ const INITIAL_STUDENTS = [
   {
     "username": "hs_12a1_08",
     "password": "123",
-    "fullname": "Trần Gia Hân",
+    "fullname": "Mai Khánh Đông",
     "className": "12A1",
     "xp": 0,
     "badges": [
@@ -10695,7 +10695,7 @@ const INITIAL_STUDENTS = [
   {
     "username": "hs_12a1_09",
     "password": "123",
-    "fullname": "Nguyễn Minh Hoàng",
+    "fullname": "Trần Đông",
     "className": "12A1",
     "xp": 0,
     "badges": [
@@ -10705,7 +10705,7 @@ const INITIAL_STUDENTS = [
   {
     "username": "hs_12a1_10",
     "password": "123",
-    "fullname": "Bùi Phúc Hưng",
+    "fullname": "Lê Bảo Hân",
     "className": "12A1",
     "xp": 0,
     "badges": [
@@ -10715,7 +10715,7 @@ const INITIAL_STUDENTS = [
   {
     "username": "hs_12a1_11",
     "password": "123",
-    "fullname": "Võ Minh Khang",
+    "fullname": "Nguyễn Thị Ngọc Hân",
     "className": "12A1",
     "xp": 0,
     "badges": [
@@ -10725,7 +10725,7 @@ const INITIAL_STUDENTS = [
   {
     "username": "hs_12a1_12",
     "password": "123",
-    "fullname": "Đỗ Nguyễn Gia Khánh",
+    "fullname": "Lã Thị Thanh Hoa",
     "className": "12A1",
     "xp": 0,
     "badges": [
@@ -10735,7 +10735,7 @@ const INITIAL_STUDENTS = [
   {
     "username": "hs_12a1_13",
     "password": "123",
-    "fullname": "Cao Gia Kiệt",
+    "fullname": "Trần Huy Hoàng",
     "className": "12A1",
     "xp": 0,
     "badges": [
@@ -10745,7 +10745,7 @@ const INITIAL_STUDENTS = [
   {
     "username": "hs_12a1_14",
     "password": "123",
-    "fullname": "Đào Duy Anh Kiệt",
+    "fullname": "Nguyễn Minh Huy",
     "className": "12A1",
     "xp": 0,
     "badges": [
@@ -10755,7 +10755,7 @@ const INITIAL_STUDENTS = [
   {
     "username": "hs_12a1_15",
     "password": "123",
-    "fullname": "Lìu Huỳnh Bảo Kim",
+    "fullname": "Nguyễn Thị Ngọc Hương",
     "className": "12A1",
     "xp": 0,
     "badges": [
@@ -10765,7 +10765,7 @@ const INITIAL_STUDENTS = [
   {
     "username": "hs_12a1_16",
     "password": "123",
-    "fullname": "Châu Bảo Linh",
+    "fullname": "Phùng Diễm Hương",
     "className": "12A1",
     "xp": 0,
     "badges": [
@@ -10775,7 +10775,7 @@ const INITIAL_STUDENTS = [
   {
     "username": "hs_12a1_17",
     "password": "123",
-    "fullname": "Trương Quỳnh My",
+    "fullname": "Trần Thị Chúc Hương",
     "className": "12A1",
     "xp": 0,
     "badges": [
@@ -10785,7 +10785,7 @@ const INITIAL_STUDENTS = [
   {
     "username": "hs_12a1_18",
     "password": "123",
-    "fullname": "Nguyễn Thị Kim Nguyên",
+    "fullname": "Phan Gia Khang",
     "className": "12A1",
     "xp": 0,
     "badges": [
@@ -10795,7 +10795,7 @@ const INITIAL_STUDENTS = [
   {
     "username": "hs_12a1_19",
     "password": "123",
-    "fullname": "Nguyễn Tiến Thiện Nhân",
+    "fullname": "Trần Thiện Khiêm",
     "className": "12A1",
     "xp": 0,
     "badges": [
@@ -10805,7 +10805,7 @@ const INITIAL_STUDENTS = [
   {
     "username": "hs_12a1_20",
     "password": "123",
-    "fullname": "Phan Văn Nhật",
+    "fullname": "Đặng Đăng Khôi",
     "className": "12A1",
     "xp": 0,
     "badges": [
@@ -10815,7 +10815,7 @@ const INITIAL_STUDENTS = [
   {
     "username": "hs_12a1_21",
     "password": "123",
-    "fullname": "Lê Uyên Nhi",
+    "fullname": "Bùi Thái Khương",
     "className": "12A1",
     "xp": 0,
     "badges": [
@@ -10825,7 +10825,7 @@ const INITIAL_STUDENTS = [
   {
     "username": "hs_12a1_22",
     "password": "123",
-    "fullname": "Đỗ Gia Phong",
+    "fullname": "Dụng Phan Hoàng Long",
     "className": "12A1",
     "xp": 0,
     "badges": [
@@ -10835,7 +10835,7 @@ const INITIAL_STUDENTS = [
   {
     "username": "hs_12a1_23",
     "password": "123",
-    "fullname": "Đỗ Gia Phú",
+    "fullname": "Nguyễn Hoài Nam",
     "className": "12A1",
     "xp": 0,
     "badges": [
@@ -10845,7 +10845,7 @@ const INITIAL_STUDENTS = [
   {
     "username": "hs_12a1_24",
     "password": "123",
-    "fullname": "Vòong Chi Phún",
+    "fullname": "Phạm Hoàng Nam",
     "className": "12A1",
     "xp": 0,
     "badges": [
@@ -10855,7 +10855,7 @@ const INITIAL_STUDENTS = [
   {
     "username": "hs_12a1_25",
     "password": "123",
-    "fullname": "Huỳnh Nhã Phương",
+    "fullname": "Phan Ngọc Kim Ngân",
     "className": "12A1",
     "xp": 0,
     "badges": [
@@ -10865,7 +10865,7 @@ const INITIAL_STUDENTS = [
   {
     "username": "hs_12a1_26",
     "password": "123",
-    "fullname": "Phạm Văn Quang",
+    "fullname": "Nguyễn Thành Bá Nghiệp",
     "className": "12A1",
     "xp": 0,
     "badges": [
@@ -10875,7 +10875,7 @@ const INITIAL_STUDENTS = [
   {
     "username": "hs_12a1_27",
     "password": "123",
-    "fullname": "Bùi Thành Tài",
+    "fullname": "Lê Hoàng Thanh Ngọc",
     "className": "12A1",
     "xp": 0,
     "badges": [
@@ -10885,7 +10885,7 @@ const INITIAL_STUDENTS = [
   {
     "username": "hs_12a1_28",
     "password": "123",
-    "fullname": "Lai Quốc Thái",
+    "fullname": "Cù Thật Vĩ Nhân",
     "className": "12A1",
     "xp": 0,
     "badges": [
@@ -10895,7 +10895,7 @@ const INITIAL_STUDENTS = [
   {
     "username": "hs_12a1_29",
     "password": "123",
-    "fullname": "Lê Đức Hải Thanh",
+    "fullname": "Võ Hoàng Đoan Nhi",
     "className": "12A1",
     "xp": 0,
     "badges": [
@@ -10905,7 +10905,7 @@ const INITIAL_STUDENTS = [
   {
     "username": "hs_12a1_30",
     "password": "123",
-    "fullname": "Hồ Văn Trí Thiện",
+    "fullname": "Biều Quốc Pháp",
     "className": "12A1",
     "xp": 0,
     "badges": [
@@ -10915,7 +10915,7 @@ const INITIAL_STUDENTS = [
   {
     "username": "hs_12a1_31",
     "password": "123",
-    "fullname": "Võ Minh Thông",
+    "fullname": "Huỳnh Trọng Phú",
     "className": "12A1",
     "xp": 0,
     "badges": [
@@ -10925,7 +10925,7 @@ const INITIAL_STUDENTS = [
   {
     "username": "hs_12a1_32",
     "password": "123",
-    "fullname": "Nguyễn Thị Thu Thúy",
+    "fullname": "Nguyễn Thị Diễm Phượng",
     "className": "12A1",
     "xp": 0,
     "badges": [
@@ -10935,7 +10935,7 @@ const INITIAL_STUDENTS = [
   {
     "username": "hs_12a1_33",
     "password": "123",
-    "fullname": "Trần Ngọc Anh Thư",
+    "fullname": "Phạm Trần Mạnh Quân",
     "className": "12A1",
     "xp": 0,
     "badges": [
@@ -10945,7 +10945,7 @@ const INITIAL_STUDENTS = [
   {
     "username": "hs_12a1_34",
     "password": "123",
-    "fullname": "Trần Nguyễn Anh Thư",
+    "fullname": "Hà Như Quỳnh",
     "className": "12A1",
     "xp": 0,
     "badges": [
@@ -10955,7 +10955,7 @@ const INITIAL_STUDENTS = [
   {
     "username": "hs_12a1_35",
     "password": "123",
-    "fullname": "Trương Nguyễn Huyền Trang",
+    "fullname": "Nguyễn Thị Ngọc Thảo",
     "className": "12A1",
     "xp": 0,
     "badges": [
@@ -10965,7 +10965,7 @@ const INITIAL_STUDENTS = [
   {
     "username": "hs_12a1_36",
     "password": "123",
-    "fullname": "Nguyễn Thị Mỹ Trâm",
+    "fullname": "Võ Thị Thanh Thảo",
     "className": "12A1",
     "xp": 0,
     "badges": [
@@ -10975,7 +10975,7 @@ const INITIAL_STUDENTS = [
   {
     "username": "hs_12a1_37",
     "password": "123",
-    "fullname": "Nguyễn Bảo Trân",
+    "fullname": "Ngô Hoàng Việt Thắng",
     "className": "12A1",
     "xp": 0,
     "badges": [
@@ -10985,7 +10985,7 @@ const INITIAL_STUDENTS = [
   {
     "username": "hs_12a1_38",
     "password": "123",
-    "fullname": "Nguyễn Huỳnh Bảo Trân",
+    "fullname": "Trần Lê Thanh Thiện",
     "className": "12A1",
     "xp": 0,
     "badges": [
@@ -10995,7 +10995,7 @@ const INITIAL_STUDENTS = [
   {
     "username": "hs_12a1_39",
     "password": "123",
-    "fullname": "Lê Gia Uyển",
+    "fullname": "Nguyễn Toàn Thịnh",
     "className": "12A1",
     "xp": 0,
     "badges": [
@@ -11005,7 +11005,7 @@ const INITIAL_STUDENTS = [
   {
     "username": "hs_12a1_40",
     "password": "123",
-    "fullname": "Huỳnh Lê Thảo Vân",
+    "fullname": "Trần Quốc Thịnh",
     "className": "12A1",
     "xp": 0,
     "badges": [
@@ -11015,7 +11015,7 @@ const INITIAL_STUDENTS = [
   {
     "username": "hs_12a1_41",
     "password": "123",
-    "fullname": "Hồ Sắm Vậy",
+    "fullname": "Nguyễn Thị Anh Thư",
     "className": "12A1",
     "xp": 0,
     "badges": [
@@ -11025,7 +11025,7 @@ const INITIAL_STUDENTS = [
   {
     "username": "hs_12a1_42",
     "password": "123",
-    "fullname": "Mai Thanh Vũ",
+    "fullname": "Phan Thị Anh Thư",
     "className": "12A1",
     "xp": 0,
     "badges": [
@@ -11035,7 +11035,7 @@ const INITIAL_STUDENTS = [
   {
     "username": "hs_12a1_43",
     "password": "123",
-    "fullname": "Huỳnh Việt Vương",
+    "fullname": "Thới Nguyên Thiên Thư",
     "className": "12A1",
     "xp": 0,
     "badges": [
@@ -11045,7 +11045,7 @@ const INITIAL_STUDENTS = [
   {
     "username": "hs_12a1_44",
     "password": "123",
-    "fullname": "Lý Thảo Vy",
+    "fullname": "Đặng Thuỷ Tiên",
     "className": "12A1",
     "xp": 0,
     "badges": [
@@ -11055,7 +11055,27 @@ const INITIAL_STUDENTS = [
   {
     "username": "hs_12a1_45",
     "password": "123",
-    "fullname": "Nguyễn Thị Thảo Vy",
+    "fullname": "Nguyễn Thị Bích Trang",
+    "className": "12A1",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a1_46",
+    "password": "123",
+    "fullname": "Nguyễn Vũ Thanh Trúc",
+    "className": "12A1",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a1_47",
+    "password": "123",
+    "fullname": "Biện Hoàng Uy",
     "className": "12A1",
     "xp": 0,
     "badges": [
@@ -11503,7 +11523,17 @@ const INITIAL_STUDENTS = [
     ]
   },
   {
-    "username": "hs2a3_02",
+    "username": "hs_12a3_01",
+    "password": "123",
+    "fullname": "Lê Hoàng Kim An",
+    "className": "12A3",
+    "xp": 0,
+    "badges": [
+      "Tân binh HTML"
+    ]
+  },
+  {
+    "username": "hs_12a3_02",
     "password": "123",
     "fullname": "Nguyễn Ngọc Hoài Ánh",
     "className": "12A3",
@@ -11513,7 +11543,7 @@ const INITIAL_STUDENTS = [
     ]
   },
   {
-    "username": "hs2a3_03",
+    "username": "hs_12a3_03",
     "password": "123",
     "fullname": "Trần Khánh Băng",
     "className": "12A3",
@@ -11523,7 +11553,7 @@ const INITIAL_STUDENTS = [
     ]
   },
   {
-    "username": "hs2a3_04",
+    "username": "hs_12a3_04",
     "password": "123",
     "fullname": "Nguyễn Bảo Châu",
     "className": "12A3",
@@ -11533,7 +11563,7 @@ const INITIAL_STUDENTS = [
     ]
   },
   {
-    "username": "hs2a3_05",
+    "username": "hs_12a3_05",
     "password": "123",
     "fullname": "Lê Đặng Thanh Duy",
     "className": "12A3",
@@ -11543,7 +11573,7 @@ const INITIAL_STUDENTS = [
     ]
   },
   {
-    "username": "hs2a3_06",
+    "username": "hs_12a3_06",
     "password": "123",
     "fullname": "Đinh Tiến Dưỡng",
     "className": "12A3",
@@ -11553,7 +11583,7 @@ const INITIAL_STUDENTS = [
     ]
   },
   {
-    "username": "hs2a3_07",
+    "username": "hs_12a3_07",
     "password": "123",
     "fullname": "Nguyễn Tấn Đạt",
     "className": "12A3",
@@ -11563,7 +11593,7 @@ const INITIAL_STUDENTS = [
     ]
   },
   {
-    "username": "hs2a3_08",
+    "username": "hs_12a3_08",
     "password": "123",
     "fullname": "Trần Gia Hân",
     "className": "12A3",
@@ -11573,7 +11603,7 @@ const INITIAL_STUDENTS = [
     ]
   },
   {
-    "username": "hs2a3_09",
+    "username": "hs_12a3_09",
     "password": "123",
     "fullname": "Nguyễn Minh Hoàng",
     "className": "12A3",
@@ -11583,7 +11613,7 @@ const INITIAL_STUDENTS = [
     ]
   },
   {
-    "username": "hs2a30",
+    "username": "hs_12a3_10",
     "password": "123",
     "fullname": "Bùi Phúc Hưng",
     "className": "12A3",
@@ -11593,7 +11623,7 @@ const INITIAL_STUDENTS = [
     ]
   },
   {
-    "username": "hs2a31",
+    "username": "hs_12a3_11",
     "password": "123",
     "fullname": "Võ Minh Khang",
     "className": "12A3",
@@ -11603,7 +11633,7 @@ const INITIAL_STUDENTS = [
     ]
   },
   {
-    "username": "hs2a32",
+    "username": "hs_12a3_12",
     "password": "123",
     "fullname": "Đỗ Nguyễn Gia Khánh",
     "className": "12A3",
@@ -11613,7 +11643,7 @@ const INITIAL_STUDENTS = [
     ]
   },
   {
-    "username": "hs2a33",
+    "username": "hs_12a3_13",
     "password": "123",
     "fullname": "Cao Gia Kiệt",
     "className": "12A3",
@@ -11623,7 +11653,7 @@ const INITIAL_STUDENTS = [
     ]
   },
   {
-    "username": "hs2a34",
+    "username": "hs_12a3_14",
     "password": "123",
     "fullname": "Đào Duy Anh Kiệt",
     "className": "12A3",
@@ -11633,7 +11663,7 @@ const INITIAL_STUDENTS = [
     ]
   },
   {
-    "username": "hs2a35",
+    "username": "hs_12a3_15",
     "password": "123",
     "fullname": "Lìu Huỳnh Bảo Kim",
     "className": "12A3",
@@ -11643,7 +11673,7 @@ const INITIAL_STUDENTS = [
     ]
   },
   {
-    "username": "hs2a36",
+    "username": "hs_12a3_16",
     "password": "123",
     "fullname": "Châu Bảo Linh",
     "className": "12A3",
@@ -11653,7 +11683,7 @@ const INITIAL_STUDENTS = [
     ]
   },
   {
-    "username": "hs2a37",
+    "username": "hs_12a3_17",
     "password": "123",
     "fullname": "Trương Quỳnh My",
     "className": "12A3",
@@ -11663,7 +11693,7 @@ const INITIAL_STUDENTS = [
     ]
   },
   {
-    "username": "hs2a38",
+    "username": "hs_12a3_18",
     "password": "123",
     "fullname": "Nguyễn Thị Kim Nguyên",
     "className": "12A3",
@@ -11673,7 +11703,7 @@ const INITIAL_STUDENTS = [
     ]
   },
   {
-    "username": "hs2a39",
+    "username": "hs_12a3_19",
     "password": "123",
     "fullname": "Nguyễn Tiến Thiện Nhân",
     "className": "12A3",
@@ -11683,7 +11713,7 @@ const INITIAL_STUDENTS = [
     ]
   },
   {
-    "username": "hs2a3_20",
+    "username": "hs_12a3_20",
     "password": "123",
     "fullname": "Phan Văn Nhật",
     "className": "12A3",
@@ -11693,7 +11723,7 @@ const INITIAL_STUDENTS = [
     ]
   },
   {
-    "username": "hs2a3_21",
+    "username": "hs_12a3_21",
     "password": "123",
     "fullname": "Lê Uyên Nhi",
     "className": "12A3",
@@ -11703,7 +11733,7 @@ const INITIAL_STUDENTS = [
     ]
   },
   {
-    "username": "hs2a3_22",
+    "username": "hs_12a3_22",
     "password": "123",
     "fullname": "Đỗ Gia Phong",
     "className": "12A3",
@@ -11713,7 +11743,7 @@ const INITIAL_STUDENTS = [
     ]
   },
   {
-    "username": "hs2a3_23",
+    "username": "hs_12a3_23",
     "password": "123",
     "fullname": "Đỗ Gia Phú",
     "className": "12A3",
@@ -11723,7 +11753,7 @@ const INITIAL_STUDENTS = [
     ]
   },
   {
-    "username": "hs2a3_24",
+    "username": "hs_12a3_24",
     "password": "123",
     "fullname": "Vòong Chi Phún",
     "className": "12A3",
@@ -11733,7 +11763,7 @@ const INITIAL_STUDENTS = [
     ]
   },
   {
-    "username": "hs2a3_25",
+    "username": "hs_12a3_25",
     "password": "123",
     "fullname": "Huỳnh Nhã Phương",
     "className": "12A3",
@@ -11743,7 +11773,7 @@ const INITIAL_STUDENTS = [
     ]
   },
   {
-    "username": "hs2a3_26",
+    "username": "hs_12a3_26",
     "password": "123",
     "fullname": "Phạm Văn Quang",
     "className": "12A3",
@@ -11753,7 +11783,7 @@ const INITIAL_STUDENTS = [
     ]
   },
   {
-    "username": "hs2a3_27",
+    "username": "hs_12a3_27",
     "password": "123",
     "fullname": "Bùi Thành Tài",
     "className": "12A3",
@@ -11763,7 +11793,7 @@ const INITIAL_STUDENTS = [
     ]
   },
   {
-    "username": "hs2a3_28",
+    "username": "hs_12a3_28",
     "password": "123",
     "fullname": "Lai Quốc Thái",
     "className": "12A3",
@@ -11773,7 +11803,7 @@ const INITIAL_STUDENTS = [
     ]
   },
   {
-    "username": "hs2a3_29",
+    "username": "hs_12a3_29",
     "password": "123",
     "fullname": "Lê Đức Hải Thanh",
     "className": "12A3",
@@ -11783,7 +11813,7 @@ const INITIAL_STUDENTS = [
     ]
   },
   {
-    "username": "hs2a3_30",
+    "username": "hs_12a3_30",
     "password": "123",
     "fullname": "Hồ Văn Trí Thiện",
     "className": "12A3",
@@ -11793,7 +11823,7 @@ const INITIAL_STUDENTS = [
     ]
   },
   {
-    "username": "hs2a3_31",
+    "username": "hs_12a3_31",
     "password": "123",
     "fullname": "Võ Minh Thông",
     "className": "12A3",
@@ -11803,7 +11833,7 @@ const INITIAL_STUDENTS = [
     ]
   },
   {
-    "username": "hs2a3_32",
+    "username": "hs_12a3_32",
     "password": "123",
     "fullname": "Nguyễn Thị Thu Thúy",
     "className": "12A3",
@@ -11813,7 +11843,7 @@ const INITIAL_STUDENTS = [
     ]
   },
   {
-    "username": "hs2a3_33",
+    "username": "hs_12a3_33",
     "password": "123",
     "fullname": "Trần Ngọc Anh Thư",
     "className": "12A3",
@@ -11823,7 +11853,7 @@ const INITIAL_STUDENTS = [
     ]
   },
   {
-    "username": "hs2a3_34",
+    "username": "hs_12a3_34",
     "password": "123",
     "fullname": "Trần Nguyễn Anh Thư",
     "className": "12A3",
@@ -11833,7 +11863,7 @@ const INITIAL_STUDENTS = [
     ]
   },
   {
-    "username": "hs2a3_35",
+    "username": "hs_12a3_35",
     "password": "123",
     "fullname": "Trương Nguyễn Huyền Trang",
     "className": "12A3",
@@ -11843,7 +11873,7 @@ const INITIAL_STUDENTS = [
     ]
   },
   {
-    "username": "hs2a3_36",
+    "username": "hs_12a3_36",
     "password": "123",
     "fullname": "Nguyễn Thị Mỹ Trâm",
     "className": "12A3",
@@ -11853,7 +11883,7 @@ const INITIAL_STUDENTS = [
     ]
   },
   {
-    "username": "hs2a3_37",
+    "username": "hs_12a3_37",
     "password": "123",
     "fullname": "Nguyễn Bảo Trân",
     "className": "12A3",
@@ -11863,7 +11893,7 @@ const INITIAL_STUDENTS = [
     ]
   },
   {
-    "username": "hs2a3_38",
+    "username": "hs_12a3_38",
     "password": "123",
     "fullname": "Nguyễn Huỳnh Bảo Trân",
     "className": "12A3",
@@ -11873,7 +11903,7 @@ const INITIAL_STUDENTS = [
     ]
   },
   {
-    "username": "hs2a3_39",
+    "username": "hs_12a3_39",
     "password": "123",
     "fullname": "Lê Gia Uyển",
     "className": "12A3",
@@ -11883,7 +11913,7 @@ const INITIAL_STUDENTS = [
     ]
   },
   {
-    "username": "hs2a3_40",
+    "username": "hs_12a3_40",
     "password": "123",
     "fullname": "Huỳnh Lê Thảo Vân",
     "className": "12A3",
@@ -11893,7 +11923,7 @@ const INITIAL_STUDENTS = [
     ]
   },
   {
-    "username": "hs2a3_41",
+    "username": "hs_12a3_41",
     "password": "123",
     "fullname": "Hồ Sắm Vậy",
     "className": "12A3",
@@ -11903,7 +11933,7 @@ const INITIAL_STUDENTS = [
     ]
   },
   {
-    "username": "hs2a3_42",
+    "username": "hs_12a3_42",
     "password": "123",
     "fullname": "Mai Thanh Vũ",
     "className": "12A3",
@@ -11913,7 +11943,7 @@ const INITIAL_STUDENTS = [
     ]
   },
   {
-    "username": "hs2a3_43",
+    "username": "hs_12a3_43",
     "password": "123",
     "fullname": "Huỳnh Việt Vương",
     "className": "12A3",
@@ -11923,7 +11953,7 @@ const INITIAL_STUDENTS = [
     ]
   },
   {
-    "username": "hs2a3_44",
+    "username": "hs_12a3_44",
     "password": "123",
     "fullname": "Lý Thảo Vy",
     "className": "12A3",
@@ -11933,19 +11963,9 @@ const INITIAL_STUDENTS = [
     ]
   },
   {
-    "username": "hs2a3_45",
+    "username": "hs_12a3_45",
     "password": "123",
     "fullname": "Nguyễn Thị Thảo Vy",
-    "className": "12A3",
-    "xp": 0,
-    "badges": [
-      "Tân binh HTML"
-    ]
-  },
-  {
-    "username": "hs2a3_01",
-    "password": "123",
-    "fullname": "Đỗ Võ Quỳnh Anh",
     "className": "12A3",
     "xp": 0,
     "badges": [
